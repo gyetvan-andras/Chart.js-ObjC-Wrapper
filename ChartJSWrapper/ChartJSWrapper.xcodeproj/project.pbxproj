@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B33CF1921ABC263600CA33B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1911ABC263600CA33B7 /* AppDelegate.m */; };
+		B33CF1941ABC263600CA33B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1931ABC263600CA33B7 /* main.m */; };
+		B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1951ABC263600CA33B7 /* Images.xcassets */; };
+		B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1971ABC263600CA33B7 /* MainMenu.xib */; };
+		B33CF1B31ABC26F100CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B01ABC26F100CA33B7 /* Chart.js */; };
+		B33CF1B41ABC26F100CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B11ABC26F100CA33B7 /* Chart.min.js */; };
+		B33CF1B51ABC26F100CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B21ABC26F100CA33B7 /* cw.html */; };
+		B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1B61ABC270600CA33B7 /* WebKit.framework */; };
+		B33CF1BA1ABC6C7100CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B91ABC6C7100CA33B7 /* datasets.js */; };
+		B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1BD1ABC9FA100CA33B7 /* CWData.m */; };
+		B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */; };
+		B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */; };
+		B33CF1EB1ABCAC1300CA33B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */; };
+		B33CF1EE1ABCB59D00CA33B7 /* CWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */; };
+		B33CF1F21ABDD0B100CA33B7 /* CWPointDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */; };
+		B33CF1F51ABDE29E00CA33B7 /* CWLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */; };
+		B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */; };
+		B33CF1FE1ABDF6F400CA33B7 /* CWLineChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */; };
+		B33CF2011ABDF99500CA33B7 /* CWBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2001ABDF99500CA33B7 /* CWBoolean.m */; };
+		B33CF2041ABEF9DA00CA33B7 /* CWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2031ABEF9DA00CA33B7 /* CWChart.m */; };
+		B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */; };
+		B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */; };
+		B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */; };
+		B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartJSWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33CF18F1ABC263600CA33B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B33CF1901ABC263600CA33B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B33CF1911ABC263600CA33B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B33CF1931ABC263600CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B33CF1951ABC263600CA33B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B33CF1981ABC263600CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B33CF1B01ABC26F100CA33B7 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
+		B33CF1B11ABC26F100CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
+		B33CF1B21ABC26F100CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cw.html; sourceTree = "<group>"; };
+		B33CF1B61ABC270600CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B33CF1B91ABC6C7100CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = datasets.js; sourceTree = "<group>"; };
+		B33CF1BC1ABC9FA100CA33B7 /* CWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWData.h; sourceTree = "<group>"; };
+		B33CF1BD1ABC9FA100CA33B7 /* CWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWData.m; sourceTree = "<group>"; };
+		B33CF1BF1ABCA40B00CA33B7 /* CWLabelledData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLabelledData.h; sourceTree = "<group>"; };
+		B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLabelledData.m; sourceTree = "<group>"; };
+		B33CF1C21ABCA55700CA33B7 /* CWDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDataSet.h; sourceTree = "<group>"; };
+		B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDataSet.m; sourceTree = "<group>"; };
+		B33CF1C51ABCA7A300CA33B7 /* CW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CW.h; sourceTree = "<group>"; };
+		B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B33CF1EC1ABCB59D00CA33B7 /* CWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWObject.h; sourceTree = "<group>"; };
+		B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWObject.m; sourceTree = "<group>"; };
+		B33CF1F01ABDD0B100CA33B7 /* CWPointDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPointDataSet.h; sourceTree = "<group>"; };
+		B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPointDataSet.m; sourceTree = "<group>"; };
+		B33CF1F31ABDE29E00CA33B7 /* CWLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChartData.h; sourceTree = "<group>"; };
+		B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChartData.m; sourceTree = "<group>"; };
+		B33CF1F61ABDEE5700CA33B7 /* CWGlobalOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWGlobalOptions.h; sourceTree = "<group>"; };
+		B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWGlobalOptions.m; sourceTree = "<group>"; };
+		B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChartOptions.h; sourceTree = "<group>"; };
+		B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChartOptions.m; sourceTree = "<group>"; };
+		B33CF1FF1ABDF99500CA33B7 /* CWBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBoolean.h; sourceTree = "<group>"; };
+		B33CF2001ABDF99500CA33B7 /* CWBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBoolean.m; sourceTree = "<group>"; };
+		B33CF2021ABEF9DA00CA33B7 /* CWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWChart.h; sourceTree = "<group>"; };
+		B33CF2031ABEF9DA00CA33B7 /* CWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWChart.m; sourceTree = "<group>"; };
+		B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChart.h; sourceTree = "<group>"; };
+		B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChart.m; sourceTree = "<group>"; };
+		B33CF2091ABF16D700CA33B7 /* CWRadarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChartData.h; sourceTree = "<group>"; };
+		B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChartData.m; sourceTree = "<group>"; };
+		B33CF20C1ABF16F300CA33B7 /* CWRadarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChartOptions.h; sourceTree = "<group>"; };
+		B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChartOptions.m; sourceTree = "<group>"; };
+		B33CF20F1ABF170B00CA33B7 /* CWRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChart.h; sourceTree = "<group>"; };
+		B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChart.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B33CF1881ABC263600CA33B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF1EB1ABCAC1300CA33B7 /* SystemConfiguration.framework in Frameworks */,
+				B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B33CF1821ABC263600CA33B7 = {
+			isa = PBXGroup;
+			children = (
+				B33CF18D1ABC263600CA33B7 /* ChartJSWrapper */,
+				B33CF1AF1ABC26E000CA33B7 /* Assets */,
+				B33CF1B81ABC271200CA33B7 /* Frameworks */,
+				B33CF18C1ABC263600CA33B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B33CF18C1ABC263600CA33B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B33CF18D1ABC263600CA33B7 /* ChartJSWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1BB1ABC9F3A00CA33B7 /* CW */,
+				B33CF1901ABC263600CA33B7 /* AppDelegate.h */,
+				B33CF1911ABC263600CA33B7 /* AppDelegate.m */,
+				B33CF1951ABC263600CA33B7 /* Images.xcassets */,
+				B33CF1971ABC263600CA33B7 /* MainMenu.xib */,
+				B33CF18E1ABC263600CA33B7 /* Supporting Files */,
+			);
+			path = ChartJSWrapper;
+			sourceTree = "<group>";
+		};
+		B33CF18E1ABC263600CA33B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF18F1ABC263600CA33B7 /* Info.plist */,
+				B33CF1931ABC263600CA33B7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B33CF1AF1ABC26E000CA33B7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1B01ABC26F100CA33B7 /* Chart.js */,
+				B33CF1B11ABC26F100CA33B7 /* Chart.min.js */,
+				B33CF1B21ABC26F100CA33B7 /* cw.html */,
+				B33CF1B91ABC6C7100CA33B7 /* datasets.js */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		B33CF1B81ABC271200CA33B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */,
+				B33CF1B61ABC270600CA33B7 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33CF1BB1ABC9F3A00CA33B7 /* CW */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1C51ABCA7A300CA33B7 /* CW.h */,
+				B33CF1F91ABDF61F00CA33B7 /* Core */,
+				B33CF1FA1ABDF63D00CA33B7 /* DataSets */,
+				B33CF1FB1ABDF68B00CA33B7 /* LineChart */,
+				B33CF2081ABF168700CA33B7 /* RadarChart */,
+			);
+			name = CW;
+			sourceTree = "<group>";
+		};
+		B33CF1F91ABDF61F00CA33B7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1EC1ABCB59D00CA33B7 /* CWObject.h */,
+				B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */,
+				B33CF1BC1ABC9FA100CA33B7 /* CWData.h */,
+				B33CF1BD1ABC9FA100CA33B7 /* CWData.m */,
+				B33CF1F61ABDEE5700CA33B7 /* CWGlobalOptions.h */,
+				B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */,
+				B33CF1FF1ABDF99500CA33B7 /* CWBoolean.h */,
+				B33CF2001ABDF99500CA33B7 /* CWBoolean.m */,
+				B33CF2021ABEF9DA00CA33B7 /* CWChart.h */,
+				B33CF2031ABEF9DA00CA33B7 /* CWChart.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B33CF1FA1ABDF63D00CA33B7 /* DataSets */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1BF1ABCA40B00CA33B7 /* CWLabelledData.h */,
+				B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */,
+				B33CF1C21ABCA55700CA33B7 /* CWDataSet.h */,
+				B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */,
+				B33CF1F01ABDD0B100CA33B7 /* CWPointDataSet.h */,
+				B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */,
+			);
+			name = DataSets;
+			sourceTree = "<group>";
+		};
+		B33CF1FB1ABDF68B00CA33B7 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF1F31ABDE29E00CA33B7 /* CWLineChartData.h */,
+				B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */,
+				B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */,
+				B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */,
+				B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */,
+				B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */,
+			);
+			name = LineChart;
+			sourceTree = "<group>";
+		};
+		B33CF2081ABF168700CA33B7 /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF2091ABF16D700CA33B7 /* CWRadarChartData.h */,
+				B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */,
+				B33CF20C1ABF16F300CA33B7 /* CWRadarChartOptions.h */,
+				B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */,
+				B33CF20F1ABF170B00CA33B7 /* CWRadarChart.h */,
+				B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */,
+			);
+			name = RadarChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B33CF18A1ABC263600CA33B7 /* ChartJSWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33CF1A81ABC263600CA33B7 /* Build configuration list for PBXNativeTarget "ChartJSWrapper" */;
+			buildPhases = (
+				B33CF1871ABC263600CA33B7 /* Sources */,
+				B33CF1881ABC263600CA33B7 /* Frameworks */,
+				B33CF1891ABC263600CA33B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChartJSWrapper;
+			productName = ChartJSWrapper;
+			productReference = B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B33CF1831ABC263600CA33B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Gyetván András";
+				TargetAttributes = {
+					B33CF18A1ABC263600CA33B7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B33CF1861ABC263600CA33B7 /* Build configuration list for PBXProject "ChartJSWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B33CF1821ABC263600CA33B7;
+			productRefGroup = B33CF18C1ABC263600CA33B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B33CF18A1ABC263600CA33B7 /* ChartJSWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B33CF1891ABC263600CA33B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF1B31ABC26F100CA33B7 /* Chart.js in Resources */,
+				B33CF1BA1ABC6C7100CA33B7 /* datasets.js in Resources */,
+				B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */,
+				B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */,
+				B33CF1B41ABC26F100CA33B7 /* Chart.min.js in Resources */,
+				B33CF1B51ABC26F100CA33B7 /* cw.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B33CF1871ABC263600CA33B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */,
+				B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */,
+				B33CF1F21ABDD0B100CA33B7 /* CWPointDataSet.m in Sources */,
+				B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */,
+				B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */,
+				B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */,
+				B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */,
+				B33CF1F51ABDE29E00CA33B7 /* CWLineChartData.m in Sources */,
+				B33CF2011ABDF99500CA33B7 /* CWBoolean.m in Sources */,
+				B33CF1FE1ABDF6F400CA33B7 /* CWLineChartOptions.m in Sources */,
+				B33CF1EE1ABCB59D00CA33B7 /* CWObject.m in Sources */,
+				B33CF2041ABEF9DA00CA33B7 /* CWChart.m in Sources */,
+				B33CF1941ABC263600CA33B7 /* main.m in Sources */,
+				B33CF1921ABC263600CA33B7 /* AppDelegate.m in Sources */,
+				B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */,
+				B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B33CF1971ABC263600CA33B7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33CF1981ABC263600CA33B7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B33CF1A61ABC263600CA33B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B33CF1A71ABC263600CA33B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B33CF1A91ABC263600CA33B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChartJSWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B33CF1AA1ABC263600CA33B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChartJSWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B33CF1861ABC263600CA33B7 /* Build configuration list for PBXProject "ChartJSWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33CF1A61ABC263600CA33B7 /* Debug */,
+				B33CF1A71ABC263600CA33B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33CF1A81ABC263600CA33B7 /* Build configuration list for PBXNativeTarget "ChartJSWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33CF1A91ABC263600CA33B7 /* Debug */,
+				B33CF1AA1ABC263600CA33B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B33CF1831ABC263600CA33B7 /* Project object */;
+}
