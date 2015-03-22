@@ -22,3 +22,6 @@
 #import "CWBarChartOptions.h"
 #import "CWBarChart.h"
 #import "CWBarDataSet.h"
+#import "CWPolarAreaChartOptions.h"
+#import "CWPolarAreaChart.h"
+#import "CWSegmentData.h"

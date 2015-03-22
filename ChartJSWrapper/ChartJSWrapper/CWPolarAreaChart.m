@@ -22,8 +22,10 @@
 }
 
 - (void) addChart {
-	NSString* dataJSON = [self convertToJSON:self.data];
+	id jsonData = [self convertToJSON:_data];
+	NSString* dataJSON = [CWObject toJSONString:jsonData];
 	NSString* optJSON = [self.options JSON];
+//	NSLog(@"Polar data:%@",dataJSON);
 	
 	NSArray* params = @[self.name,@(self.width),@(self.height),dataJSON,optJSON];
 	

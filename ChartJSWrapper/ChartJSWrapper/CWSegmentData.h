@@ -12,5 +12,5 @@
 @property (nonatomic,strong) NSNumber* value;//: 300,
 @property (nonatomic, strong) NSColor* color;//:"#F7464A",
 @property (nonatomic, strong) NSColor* highlight;//: "#FF5A5E",
-@property (nonatomic, strong) NSColor* label;//: "Red"
+@property (nonatomic, strong) NSString* label;//: "Red"
 @end

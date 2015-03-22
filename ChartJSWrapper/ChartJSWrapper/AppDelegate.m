@@ -19,6 +19,7 @@
 - (IBAction)removeLine:(id)sender;
 - (IBAction)changeLine:(id)sender;
 - (IBAction)addBar:(id)sender;
+- (IBAction)addPolarArea:(id)sender;
 
 @property (nonatomic, strong) CWLineChart* lineChart;
 @end
@@ -103,6 +104,22 @@
 	CWBarChartData* bcd = [[CWBarChartData alloc] initWithLabels:labels andDataSet:datasets];
 	CWBarChart* bc = [[CWBarChart alloc] initWithWindowScriptObject:win name:@"BarChart1" width:600 height:250 data:bcd options:nil];
 	[bc addChart];
+}
+
+- (IBAction)addPolarArea:(id)sender {
+	NSMutableArray* data = [NSMutableArray array];
+	for(NSInteger i = 1; i < 11; i++) {
+		CWSegmentData* segment = [[CWSegmentData alloc] init];
+		segment.value = @([self random:100]+50);
+		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+		segment.color = c;
+		segment.highlight = [NSColor lightGrayColor];
+		segment.label = [NSString stringWithFormat:@"Label %ld",i];
+		[data addObject:segment];
+	}
+	id win = [self.webview windowScriptObject];
+	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:300 height:300 data:data options:nil];
+	[pac addChart];
 }
 
 - (IBAction)makeJSON:(id)sender {

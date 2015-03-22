@@ -12,4 +12,5 @@
 - (id) convertToJSON:(id)val;
 - (id) asJSONObject;
 - (NSString*) JSON;
++ (NSString*) toJSONString:(id)val;
 @end

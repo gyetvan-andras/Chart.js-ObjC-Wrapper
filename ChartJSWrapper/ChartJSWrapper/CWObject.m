@@ -80,10 +80,17 @@
 	return ret;
 }
 
-- (NSString*) JSON {
-	NSData *dataJSON = [NSJSONSerialization dataWithJSONObject:[self asJSONObject] options:NSJSONWritingPrettyPrinted error:nil];
++ (NSString*) toJSONString:(id)val {
+	NSData *dataJSON = [NSJSONSerialization dataWithJSONObject:val options:NSJSONWritingPrettyPrinted error:nil];
 	NSString *stringJSON = [[NSString alloc] initWithData:dataJSON encoding:NSUTF8StringEncoding];
 	return stringJSON;
+}
+
+- (NSString*) JSON {
+	return [CWObject toJSONString:[self asJSONObject]];
+//	NSData *dataJSON = [NSJSONSerialization dataWithJSONObject:[self asJSONObject] options:NSJSONWritingPrettyPrinted error:nil];
+//	NSString *stringJSON = [[NSString alloc] initWithData:dataJSON encoding:NSUTF8StringEncoding];
+//	return stringJSON;
 }
 
 
