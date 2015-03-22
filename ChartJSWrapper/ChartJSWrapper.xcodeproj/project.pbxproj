@@ -11,11 +11,7 @@
 		B33CF1941ABC263600CA33B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1931ABC263600CA33B7 /* main.m */; };
 		B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1951ABC263600CA33B7 /* Images.xcassets */; };
 		B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1971ABC263600CA33B7 /* MainMenu.xib */; };
-		B33CF1B31ABC26F100CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B01ABC26F100CA33B7 /* Chart.js */; };
-		B33CF1B41ABC26F100CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B11ABC26F100CA33B7 /* Chart.min.js */; };
-		B33CF1B51ABC26F100CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B21ABC26F100CA33B7 /* cw.html */; };
 		B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1B61ABC270600CA33B7 /* WebKit.framework */; };
-		B33CF1BA1ABC6C7100CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1B91ABC6C7100CA33B7 /* datasets.js */; };
 		B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1BD1ABC9FA100CA33B7 /* CWData.m */; };
 		B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */; };
 		B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */; };
@@ -31,6 +27,10 @@
 		B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */; };
 		B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */; };
 		B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */; };
+		B33CF2171ABF351C00CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2131ABF351C00CA33B7 /* Chart.js */; };
+		B33CF2181ABF351C00CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2141ABF351C00CA33B7 /* Chart.min.js */; };
+		B33CF2191ABF351C00CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2151ABF351C00CA33B7 /* cw.html */; };
+		B33CF21A1ABF351C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2161ABF351C00CA33B7 /* datasets.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +41,7 @@
 		B33CF1931ABC263600CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B33CF1951ABC263600CA33B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B33CF1981ABC263600CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B33CF1B01ABC26F100CA33B7 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
-		B33CF1B11ABC26F100CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
-		B33CF1B21ABC26F100CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cw.html; sourceTree = "<group>"; };
 		B33CF1B61ABC270600CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B33CF1B91ABC6C7100CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = datasets.js; sourceTree = "<group>"; };
 		B33CF1BC1ABC9FA100CA33B7 /* CWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWData.h; sourceTree = "<group>"; };
 		B33CF1BD1ABC9FA100CA33B7 /* CWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWData.m; sourceTree = "<group>"; };
 		B33CF1BF1ABCA40B00CA33B7 /* CWLabelledData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLabelledData.h; sourceTree = "<group>"; };
@@ -76,6 +72,10 @@
 		B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChartOptions.m; sourceTree = "<group>"; };
 		B33CF20F1ABF170B00CA33B7 /* CWRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChart.h; sourceTree = "<group>"; };
 		B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChart.m; sourceTree = "<group>"; };
+		B33CF2131ABF351C00CA33B7 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
+		B33CF2141ABF351C00CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
+		B33CF2151ABF351C00CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cw.html; sourceTree = "<group>"; };
+		B33CF2161ABF351C00CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = datasets.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				B33CF18D1ABC263600CA33B7 /* ChartJSWrapper */,
-				B33CF1AF1ABC26E000CA33B7 /* Assets */,
 				B33CF1B81ABC271200CA33B7 /* Frameworks */,
 				B33CF18C1ABC263600CA33B7 /* Products */,
 			);
@@ -113,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B33CF1BB1ABC9F3A00CA33B7 /* CW */,
+				B33CF2121ABF351C00CA33B7 /* Assets */,
 				B33CF1901ABC263600CA33B7 /* AppDelegate.h */,
 				B33CF1911ABC263600CA33B7 /* AppDelegate.m */,
 				B33CF1951ABC263600CA33B7 /* Images.xcassets */,
@@ -129,17 +129,6 @@
 				B33CF1931ABC263600CA33B7 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B33CF1AF1ABC26E000CA33B7 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				B33CF1B01ABC26F100CA33B7 /* Chart.js */,
-				B33CF1B11ABC26F100CA33B7 /* Chart.min.js */,
-				B33CF1B21ABC26F100CA33B7 /* cw.html */,
-				B33CF1B91ABC6C7100CA33B7 /* datasets.js */,
-			);
-			name = Assets;
 			sourceTree = "<group>";
 		};
 		B33CF1B81ABC271200CA33B7 /* Frameworks */ = {
@@ -200,8 +189,8 @@
 				B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */,
 				B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */,
 				B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */,
-				B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */,
 				B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */,
+				B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */,
 			);
 			name = LineChart;
 			sourceTree = "<group>";
@@ -217,6 +206,17 @@
 				B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */,
 			);
 			name = RadarChart;
+			sourceTree = "<group>";
+		};
+		B33CF2121ABF351C00CA33B7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF2131ABF351C00CA33B7 /* Chart.js */,
+				B33CF2141ABF351C00CA33B7 /* Chart.min.js */,
+				B33CF2151ABF351C00CA33B7 /* cw.html */,
+				B33CF2161ABF351C00CA33B7 /* datasets.js */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B33CF1B31ABC26F100CA33B7 /* Chart.js in Resources */,
-				B33CF1BA1ABC6C7100CA33B7 /* datasets.js in Resources */,
+				B33CF2171ABF351C00CA33B7 /* Chart.js in Resources */,
+				B33CF21A1ABF351C00CA33B7 /* datasets.js in Resources */,
 				B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */,
 				B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */,
-				B33CF1B41ABC26F100CA33B7 /* Chart.min.js in Resources */,
-				B33CF1B51ABC26F100CA33B7 /* cw.html in Resources */,
+				B33CF2191ABF351C00CA33B7 /* cw.html in Resources */,
+				B33CF2181ABF351C00CA33B7 /* Chart.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				B33CF1AA1ABC263600CA33B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
