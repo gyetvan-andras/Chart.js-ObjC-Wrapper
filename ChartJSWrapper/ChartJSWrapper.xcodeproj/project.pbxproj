@@ -38,6 +38,8 @@
 		B33CF22A1ABF3BF900CA33B7 /* CWSegmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */; };
 		B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */; };
 		B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */; };
+		B33CF2351ABF5D3900CA33B7 /* CWPieChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */; };
+		B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,10 @@
 		B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChartOptions.m; sourceTree = "<group>"; };
 		B33CF22F1ABF3D4B00CA33B7 /* CWPolarAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPolarAreaChart.h; sourceTree = "<group>"; };
 		B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChart.m; sourceTree = "<group>"; };
+		B33CF2331ABF5D3900CA33B7 /* CWPieChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPieChartOptions.h; sourceTree = "<group>"; };
+		B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChartOptions.m; sourceTree = "<group>"; };
+		B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPieChart.h; sourceTree = "<group>"; };
+		B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 				B33CF2081ABF168700CA33B7 /* RadarChart */,
 				B33CF21B1ABF35B600CA33B7 /* BarChart */,
 				B33CF22B1ABF3CF200CA33B7 /* PolarAreaChart */,
+				B33CF2321ABF5CE000CA33B7 /* PieAndDonughtChart */,
 			);
 			name = CW;
 			sourceTree = "<group>";
@@ -270,6 +277,17 @@
 			name = PolarAreaChart;
 			sourceTree = "<group>";
 		};
+		B33CF2321ABF5CE000CA33B7 /* PieAndDonughtChart */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF2331ABF5D3900CA33B7 /* CWPieChartOptions.h */,
+				B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */,
+				B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */,
+				B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */,
+			);
+			name = PieAndDonughtChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */,
 				B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */,
 				B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */,
 				B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */,
@@ -351,6 +370,7 @@
 				B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */,
 				B33CF2211ABF369000CA33B7 /* CWBarChartData.m in Sources */,
 				B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */,
+				B33CF2351ABF5D3900CA33B7 /* CWPieChartOptions.m in Sources */,
 				B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */,
 				B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */,
 				B33CF1F51ABDE29E00CA33B7 /* CWLineChartData.m in Sources */,

@@ -120,7 +120,6 @@ function addBarChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
 	return 'OK';
 }
 
-//addPolarAreaChart
 function addPolarAreaChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
 	var data = JSON.parse(chartData);
 	var options = JSON.parse(chartOptions);
@@ -128,6 +127,17 @@ function addPolarAreaChart(chartId,chartWidth,chartHeight,chartData, chartOption
 	var ctx = createContext(chartId,chartWidth,chartHeight);
 	
 	var chart = new Chart(ctx).PolarArea(data,options);
+	window[chartId] = chart;
+	return 'OK';
+}
+
+function addPieChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
+	var data = JSON.parse(chartData);
+	var options = JSON.parse(chartOptions);
+	
+	var ctx = createContext(chartId,chartWidth,chartHeight);
+	
+	var chart = new Chart(ctx).Pie(data,options);
 	window[chartId] = chart;
 	return 'OK';
 }
