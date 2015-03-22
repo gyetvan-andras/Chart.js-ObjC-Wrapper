@@ -18,6 +18,7 @@
 - (IBAction)addLine:(id)sender;
 - (IBAction)removeLine:(id)sender;
 - (IBAction)changeLine:(id)sender;
+- (IBAction)addBar:(id)sender;
 
 @property (nonatomic, strong) CWLineChart* lineChart;
 @end
@@ -84,6 +85,24 @@
 	[self.lineChart setValue:@([self random:100]) inDataset:0 at:2];
 	[self.lineChart setValue:@([self random:100]) inDataset:0 at:3];
 	[self.lineChart update];
+}
+
+- (IBAction)addBar:(id)sender {
+	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D"]];
+	NSMutableArray* datasets = [NSMutableArray array];
+	for(NSInteger i = 1; i < 4; i++) {
+		CWBarDataSet* ds = [[CWBarDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
+		ds.label = [NSString stringWithFormat:@"Label %ld",i];
+		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+		ds.fillColor = c;
+		ds.strokeColor = [NSColor grayColor];
+		[datasets addObject:ds];
+	}
+	id win = [self.webview windowScriptObject];
+	
+	CWBarChartData* bcd = [[CWBarChartData alloc] initWithLabels:labels andDataSet:datasets];
+	CWBarChart* bc = [[CWBarChart alloc] initWithWindowScriptObject:win name:@"BarChart1" width:600 height:250 data:bcd options:nil];
+	[bc addChart];
 }
 
 - (IBAction)makeJSON:(id)sender {

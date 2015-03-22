@@ -679,7 +679,9 @@
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-ur-Gux">
                         <rect key="frame" x="20" y="55" width="662" height="377"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
                     </webView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EZv-H6-8b5">
                         <rect key="frame" x="14" y="7" width="66" height="32"/>
@@ -746,6 +748,19 @@
                             <action selector="changeLine:" target="Voe-Tx-rLC" id="CFP-B5-8L4"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-qM-efg">
+                        <rect key="frame" x="275" y="7" width="62" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="YXw-A1-nOB"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Bar" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZW0-lD-BaQ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addBar:" target="Voe-Tx-rLC" id="e1M-7K-VF2"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="KYb-mF-FJW" secondAttribute="bottom" constant="14" id="1nw-F6-bzH"/>
@@ -759,8 +774,10 @@
                     <constraint firstItem="EZv-H6-8b5" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="gEM-rq-YL4"/>
                     <constraint firstAttribute="bottom" secondItem="EZv-H6-8b5" secondAttribute="bottom" constant="14" id="lf1-2j-IQ7"/>
                     <constraint firstItem="5wA-st-r16" firstAttribute="leading" secondItem="EZv-H6-8b5" secondAttribute="trailing" constant="12" id="neZ-jf-CUs"/>
+                    <constraint firstAttribute="bottom" secondItem="RfF-qM-efg" secondAttribute="bottom" constant="14" id="ocF-0s-66y"/>
                     <constraint firstItem="ah0-ah-2td" firstAttribute="leading" secondItem="5wA-st-r16" secondAttribute="trailing" constant="12" id="q2C-dv-uqZ"/>
                     <constraint firstAttribute="bottom" secondItem="ah0-ah-2td" secondAttribute="bottom" constant="14" id="vOC-f7-24K"/>
+                    <constraint firstItem="RfF-qM-efg" firstAttribute="leading" secondItem="ah0-ah-2td" secondAttribute="trailing" constant="12" id="vrr-dl-6yL"/>
                     <constraint firstAttribute="bottom" secondItem="GGU-3y-a7J" secondAttribute="bottom" constant="14" id="xBm-Sy-xNM"/>
                 </constraints>
             </view>

@@ -18,3 +18,7 @@
 #import "CWRadarChartData.h"
 #import "CWRadarChartOptions.h"
 #import "CWRadarChart.h"
+#import "CWBarChartData.h"
+#import "CWBarChartOptions.h"
+#import "CWBarChart.h"
+#import "CWBarDataSet.h"

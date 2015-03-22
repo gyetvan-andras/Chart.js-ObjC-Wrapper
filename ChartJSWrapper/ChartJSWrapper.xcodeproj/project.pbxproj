@@ -31,6 +31,13 @@
 		B33CF2181ABF351C00CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2141ABF351C00CA33B7 /* Chart.min.js */; };
 		B33CF2191ABF351C00CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2151ABF351C00CA33B7 /* cw.html */; };
 		B33CF21A1ABF351C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2161ABF351C00CA33B7 /* datasets.js */; };
+		B33CF21E1ABF35E600CA33B7 /* CWBarDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */; };
+		B33CF2211ABF369000CA33B7 /* CWBarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2201ABF369000CA33B7 /* CWBarChartData.m */; };
+		B33CF2241ABF372600CA33B7 /* CWBarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */; };
+		B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2261ABF388E00CA33B7 /* CWBarChart.m */; };
+		B33CF22A1ABF3BF900CA33B7 /* CWSegmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */; };
+		B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */; };
+		B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +83,20 @@
 		B33CF2141ABF351C00CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
 		B33CF2151ABF351C00CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cw.html; sourceTree = "<group>"; };
 		B33CF2161ABF351C00CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = datasets.js; sourceTree = "<group>"; };
+		B33CF21C1ABF35E600CA33B7 /* CWBarDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarDataSet.h; sourceTree = "<group>"; };
+		B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarDataSet.m; sourceTree = "<group>"; };
+		B33CF21F1ABF369000CA33B7 /* CWBarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChartData.h; sourceTree = "<group>"; };
+		B33CF2201ABF369000CA33B7 /* CWBarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChartData.m; sourceTree = "<group>"; };
+		B33CF2221ABF372600CA33B7 /* CWBarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChartOptions.h; sourceTree = "<group>"; };
+		B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChartOptions.m; sourceTree = "<group>"; };
+		B33CF2251ABF388E00CA33B7 /* CWBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChart.h; sourceTree = "<group>"; };
+		B33CF2261ABF388E00CA33B7 /* CWBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChart.m; sourceTree = "<group>"; };
+		B33CF2281ABF3BF900CA33B7 /* CWSegmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWSegmentData.h; sourceTree = "<group>"; };
+		B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWSegmentData.m; sourceTree = "<group>"; };
+		B33CF22C1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPolarAreaChartOptions.h; sourceTree = "<group>"; };
+		B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChartOptions.m; sourceTree = "<group>"; };
+		B33CF22F1ABF3D4B00CA33B7 /* CWPolarAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPolarAreaChart.h; sourceTree = "<group>"; };
+		B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +169,8 @@
 				B33CF1FA1ABDF63D00CA33B7 /* DataSets */,
 				B33CF1FB1ABDF68B00CA33B7 /* LineChart */,
 				B33CF2081ABF168700CA33B7 /* RadarChart */,
+				B33CF21B1ABF35B600CA33B7 /* BarChart */,
+				B33CF22B1ABF3CF200CA33B7 /* PolarAreaChart */,
 			);
 			name = CW;
 			sourceTree = "<group>";
@@ -165,6 +188,8 @@
 				B33CF2001ABDF99500CA33B7 /* CWBoolean.m */,
 				B33CF2021ABEF9DA00CA33B7 /* CWChart.h */,
 				B33CF2031ABEF9DA00CA33B7 /* CWChart.m */,
+				B33CF2281ABF3BF900CA33B7 /* CWSegmentData.h */,
+				B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -189,8 +214,8 @@
 				B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */,
 				B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */,
 				B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */,
-				B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */,
 				B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */,
+				B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */,
 			);
 			name = LineChart;
 			sourceTree = "<group>";
@@ -217,6 +242,32 @@
 				B33CF2161ABF351C00CA33B7 /* datasets.js */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		B33CF21B1ABF35B600CA33B7 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF21C1ABF35E600CA33B7 /* CWBarDataSet.h */,
+				B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */,
+				B33CF21F1ABF369000CA33B7 /* CWBarChartData.h */,
+				B33CF2201ABF369000CA33B7 /* CWBarChartData.m */,
+				B33CF2221ABF372600CA33B7 /* CWBarChartOptions.h */,
+				B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */,
+				B33CF2251ABF388E00CA33B7 /* CWBarChart.h */,
+				B33CF2261ABF388E00CA33B7 /* CWBarChart.m */,
+			);
+			name = BarChart;
+			sourceTree = "<group>";
+		};
+		B33CF22B1ABF3CF200CA33B7 /* PolarAreaChart */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF22C1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.h */,
+				B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */,
+				B33CF22F1ABF3D4B00CA33B7 /* CWPolarAreaChart.h */,
+				B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */,
+			);
+			name = PolarAreaChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */,
+				B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */,
 				B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */,
 				B33CF1F21ABDD0B100CA33B7 /* CWPointDataSet.m in Sources */,
+				B33CF22A1ABF3BF900CA33B7 /* CWSegmentData.m in Sources */,
 				B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */,
+				B33CF2211ABF369000CA33B7 /* CWBarChartData.m in Sources */,
 				B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */,
 				B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */,
 				B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */,
@@ -304,10 +358,14 @@
 				B33CF1FE1ABDF6F400CA33B7 /* CWLineChartOptions.m in Sources */,
 				B33CF1EE1ABCB59D00CA33B7 /* CWObject.m in Sources */,
 				B33CF2041ABEF9DA00CA33B7 /* CWChart.m in Sources */,
+				B33CF2241ABF372600CA33B7 /* CWBarChartOptions.m in Sources */,
+				B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */,
 				B33CF1941ABC263600CA33B7 /* main.m in Sources */,
 				B33CF1921ABC263600CA33B7 /* AppDelegate.m in Sources */,
+				B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */,
 				B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */,
 				B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */,
+				B33CF21E1ABF35E600CA33B7 /* CWBarDataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

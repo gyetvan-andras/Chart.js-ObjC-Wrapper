@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CWObject : NSObject
+- (id) convertToJSON:(id)val;
 - (id) asJSONObject;
 - (NSString*) JSON;
 @end

@@ -1,0 +1,16 @@
+//
+//  CWSegmentData.h
+//  ChartJSWrapper
+//
+//  Created by András Gyetván on 22/03/15.
+//  Copyright (c) 2015 Gyetván András. All rights reserved.
+//
+
+#import "CWData.h"
+
+@interface CWSegmentData : CWData
+@property (nonatomic,strong) NSNumber* value;//: 300,
+@property (nonatomic, strong) NSColor* color;//:"#F7464A",
+@property (nonatomic, strong) NSColor* highlight;//: "#FF5A5E",
+@property (nonatomic, strong) NSColor* label;//: "Red"
+@end

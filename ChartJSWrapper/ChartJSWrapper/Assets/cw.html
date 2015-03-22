@@ -42,6 +42,19 @@ function setPointValue(chartId, dataset, index, value) {
 	return 'OK'
 }
 
+function setBarValue(chartId, dataset, index, value) {
+	var chart = window[chartId];
+	chart.datasets[dataset].bars[index].value = value;
+	return 'OK'
+}
+
+function setSegmentValue(chartId, segment, value) {
+	var chart = window[chartId];
+	chart.segments[segment].value = value;
+	return 'OK'
+}
+
+
 function updateChart(chartId) {
 	var chart = window[chartId];
 	chart.update();
@@ -92,6 +105,29 @@ function addRadarChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
 	var ctx = createContext(chartId,chartWidth,chartHeight);
 	
 	var chart = new Chart(ctx).Radar(data,options);
+	window[chartId] = chart;
+	return 'OK';
+}
+
+function addBarChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
+	var data = JSON.parse(chartData);
+	var options = JSON.parse(chartOptions);
+	
+	var ctx = createContext(chartId,chartWidth,chartHeight);
+	
+	var chart = new Chart(ctx).Bar(data,options);
+	window[chartId] = chart;
+	return 'OK';
+}
+
+//addPolarAreaChart
+function addPolarAreaChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
+	var data = JSON.parse(chartData);
+	var options = JSON.parse(chartOptions);
+	
+	var ctx = createContext(chartId,chartWidth,chartHeight);
+	
+	var chart = new Chart(ctx).PolarArea(data,options);
 	window[chartId] = chart;
 	return 'OK';
 }
