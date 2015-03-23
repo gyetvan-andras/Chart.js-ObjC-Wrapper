@@ -29,5 +29,6 @@
 #import "CWPieChart.h"
 //#import "CWDoughnutChartOptions.h"
 #import "CWDoughnutChart.h"
+#import "CWColors.h"
 
 //defaults write hu.gyand.ChartJSWrapper  WebKitDeveloperExtras -bool true

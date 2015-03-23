@@ -68,9 +68,10 @@
 	for(NSInteger i = 1; i < 4; i++) {
 		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
 		ds.label = [NSString stringWithFormat:@"Label %ld",i];
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		ds.fillColor = c;
-		ds.strokeColor = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		ds.fillColor = c2;
+		ds.strokeColor = c1;
 		[datasets addObject:ds];
 	}
 	id win = [self.webview windowScriptObject];
@@ -99,9 +100,10 @@
 	for(NSInteger i = 1; i < 4; i++) {
 		CWBarDataSet* ds = [[CWBarDataSet alloc] initWithData:@[@([self random:100]+50),@([self random:100]+50),@([self random:100]+50),@([self random:100]+50)]];
 		ds.label = [NSString stringWithFormat:@"Label %ld",i];
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		ds.fillColor = c;
-		ds.strokeColor = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		ds.fillColor = c2;
+		ds.strokeColor = c1;
 		[datasets addObject:ds];
 	}
 	id win = [self.webview windowScriptObject];
@@ -117,9 +119,10 @@
 	for(NSInteger i = 1; i < 11; i++) {
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		segment.color = c;
-		segment.highlight = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		segment.color = c2;
+		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
@@ -133,9 +136,10 @@
 	for(NSInteger i = 1; i < 11; i++) {
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		segment.color = c;
-		segment.highlight = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		segment.color = c2;
+		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
@@ -150,9 +154,10 @@
 	for(NSInteger i = 1; i < 11; i++) {
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		segment.color = c;
-		segment.highlight = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		segment.color = c2;
+		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
@@ -194,11 +199,12 @@
 	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D"]];
 	NSMutableArray* datasets = [NSMutableArray array];
 	for(NSInteger i = 1; i < 4; i++) {
-		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
+		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]+50),@([self random:100]+50),@([self random:100]+50),@([self random:100]+50)]];
 		ds.label = [NSString stringWithFormat:@"Label %ld",i];
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		ds.fillColor = c;
-		ds.strokeColor = [NSColor grayColor];
+		NSColor* c1 = [[CWColors sharedColors] pickColor];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		ds.fillColor = c2;
+		ds.strokeColor = c1;
 		[datasets addObject:ds];
 	}
 	id win = [self.webview windowScriptObject];

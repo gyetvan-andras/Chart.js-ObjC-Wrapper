@@ -42,6 +42,7 @@
 		B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */; };
 		B33CF23B1ABFFE7600CA33B7 /* CWDoughnutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */; };
 		B33CF23D1AC0876B00CA33B7 /* cw.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF23C1AC0876B00CA33B7 /* cw.js */; };
+		B33CF2431AC0A95500CA33B7 /* CWColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2421AC0A95500CA33B7 /* CWColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,8 @@
 		B33CF2391ABFFE7600CA33B7 /* CWDoughnutChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDoughnutChart.h; sourceTree = "<group>"; };
 		B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDoughnutChart.m; sourceTree = "<group>"; };
 		B33CF23C1AC0876B00CA33B7 /* cw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cw.js; sourceTree = "<group>"; };
+		B33CF2411AC0A95500CA33B7 /* CWColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWColors.h; sourceTree = "<group>"; };
+		B33CF2421AC0A95500CA33B7 /* CWColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWColors.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 		B33CF1F91ABDF61F00CA33B7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B33CF2411AC0A95500CA33B7 /* CWColors.h */,
+				B33CF2421AC0A95500CA33B7 /* CWColors.m */,
 				B33CF1EC1ABCB59D00CA33B7 /* CWObject.h */,
 				B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */,
 				B33CF1BC1ABC9FA100CA33B7 /* CWData.h */,
@@ -395,6 +400,7 @@
 				B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */,
 				B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */,
 				B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */,
+				B33CF2431AC0A95500CA33B7 /* CWColors.m in Sources */,
 				B33CF21E1ABF35E600CA33B7 /* CWBarDataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
