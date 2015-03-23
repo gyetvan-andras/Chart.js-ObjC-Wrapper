@@ -8,6 +8,11 @@
 
 #import "CWPolarAreaChart.h"
 
+@interface CWPolarAreaChart ()
+@property (nonatomic, strong,readonly) NSArray* data;
+@property (nonatomic, strong, readonly) CWPolarAreaChartOptions* options;
+@end
+
 @implementation CWPolarAreaChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(NSArray*)data options:(CWPolarAreaChartOptions*) options {
 	self = [super initWithWindowScriptObject:win name:name width:w height:h];

@@ -9,5 +9,9 @@
 #import "CWPieChartOptions.h"
 
 @implementation CWPieChartOptions
+- (instancetype) init {
+	self = [super init];
+	return self;
+}
 
 @end

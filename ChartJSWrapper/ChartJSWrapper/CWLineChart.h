@@ -11,8 +11,6 @@
 #import "CWLineChartOptions.h"
 
 @interface CWLineChart : CWChart
-@property (nonatomic, strong,readonly) CWLineChartData* data;
-@property (nonatomic, strong, readonly) CWLineChartOptions* options;
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWLineChartData*)data options:(CWLineChartOptions*) options;
 - (void) setValue:(NSNumber*)val inDataset:(NSInteger)dataset at:(NSInteger)data;
 

@@ -33,4 +33,15 @@
 	NSLog(@"Result is:%@",res);
 }
 
+- (void) setValue:(NSNumber*)val inSegment:(NSInteger)segment {
+	NSMutableArray* arr = (NSMutableArray*)_data;
+	arr[segment] = val;
+	[_data setValue:val ];
+	NSArray* params = @[self.name,@(segment),val];
+	
+	id res = [self.win callWebScriptMethod:@"setSegmentValue" withArguments:params];
+	
+	NSLog(@"Result setSegmentValue is:%@",res);
+}
+
 @end

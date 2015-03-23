@@ -40,6 +40,7 @@
 		B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */; };
 		B33CF2351ABF5D3900CA33B7 /* CWPieChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */; };
 		B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */; };
+		B33CF23B1ABFFE7600CA33B7 /* CWDoughnutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChartOptions.m; sourceTree = "<group>"; };
 		B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPieChart.h; sourceTree = "<group>"; };
 		B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChart.m; sourceTree = "<group>"; };
+		B33CF2391ABFFE7600CA33B7 /* CWDoughnutChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDoughnutChart.h; sourceTree = "<group>"; };
+		B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDoughnutChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +180,7 @@
 				B33CF2081ABF168700CA33B7 /* RadarChart */,
 				B33CF21B1ABF35B600CA33B7 /* BarChart */,
 				B33CF22B1ABF3CF200CA33B7 /* PolarAreaChart */,
-				B33CF2321ABF5CE000CA33B7 /* PieAndDonughtChart */,
+				B33CF2321ABF5CE000CA33B7 /* PieAndDoughnutChart */,
 			);
 			name = CW;
 			sourceTree = "<group>";
@@ -277,15 +280,17 @@
 			name = PolarAreaChart;
 			sourceTree = "<group>";
 		};
-		B33CF2321ABF5CE000CA33B7 /* PieAndDonughtChart */ = {
+		B33CF2321ABF5CE000CA33B7 /* PieAndDoughnutChart */ = {
 			isa = PBXGroup;
 			children = (
 				B33CF2331ABF5D3900CA33B7 /* CWPieChartOptions.h */,
 				B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */,
 				B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */,
 				B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */,
+				B33CF2391ABFFE7600CA33B7 /* CWDoughnutChart.h */,
+				B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */,
 			);
-			name = PieAndDonughtChart;
+			name = PieAndDoughnutChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +386,7 @@
 				B33CF2241ABF372600CA33B7 /* CWBarChartOptions.m in Sources */,
 				B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */,
 				B33CF1941ABC263600CA33B7 /* main.m in Sources */,
+				B33CF23B1ABFFE7600CA33B7 /* CWDoughnutChart.m in Sources */,
 				B33CF1921ABC263600CA33B7 /* AppDelegate.m in Sources */,
 				B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */,
 				B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */,

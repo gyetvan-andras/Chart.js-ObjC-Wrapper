@@ -7,6 +7,10 @@
 //
 
 #import "CWBarChart.h"
+@interface CWBarChart ()
+@property (nonatomic, strong,readonly) CWBarChartData* data;
+@property (nonatomic, strong, readonly) CWBarChartOptions* options;
+@end
 
 @implementation CWBarChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWBarChartData*)data options:(CWBarChartOptions*) options {

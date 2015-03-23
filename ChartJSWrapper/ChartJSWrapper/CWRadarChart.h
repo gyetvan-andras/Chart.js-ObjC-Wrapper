@@ -7,7 +7,9 @@
 //
 
 #import "CWLineChart.h"
+#import "CWRadarChartData.h"
+#import "CWRadarChartOptions.h"
 
 @interface CWRadarChart : CWLineChart
-
+- (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWRadarChartData*)data options:(CWRadarChartOptions*) options;
 @end

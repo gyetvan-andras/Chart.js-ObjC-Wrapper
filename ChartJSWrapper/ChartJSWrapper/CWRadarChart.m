@@ -8,9 +8,22 @@
 
 #import "CWRadarChart.h"
 
+@interface CWRadarChart ()
+@property (nonatomic, strong,readonly) CWRadarChartData* data;
+@property (nonatomic, strong, readonly) CWRadarChartOptions* options;
+@end
+
 @implementation CWRadarChart
-- (instancetype) init {
-	return [super init];
+- (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWRadarChartData*)data options:(CWRadarChartOptions*) options {
+	self = [super initWithWindowScriptObject:win name:name width:w height:h];
+	if(self) {
+		_data = data;
+		_options = options;
+		if(!_options) {
+			_options = [[CWRadarChartOptions alloc] init];
+		}
+	}
+	return self;
 }
 
 - (void) addChart {

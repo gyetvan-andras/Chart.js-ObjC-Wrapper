@@ -40,6 +40,6 @@
 @property (nonatomic,strong) NSNumber* barDatasetSpacing;// : 1,
 
 //String - A legend template
-@property (nonatomic,strong) NSNumber* legendTemplate;// r : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+@property (nonatomic,strong) NSString* legendTemplate;// r : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 
 @end

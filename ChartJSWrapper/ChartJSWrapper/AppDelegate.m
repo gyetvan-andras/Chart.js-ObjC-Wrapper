@@ -20,6 +20,8 @@
 - (IBAction)changeLine:(id)sender;
 - (IBAction)addBar:(id)sender;
 - (IBAction)addPolarArea:(id)sender;
+- (IBAction)addPie:(id)sender;
+- (IBAction)addDoughnut:(id)sender;
 
 @property (nonatomic, strong) CWLineChart* lineChart;
 @end
@@ -120,6 +122,38 @@
 	id win = [self.webview windowScriptObject];
 	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:300 height:300 data:data options:nil];
 	[pac addChart];
+}
+
+- (IBAction)addPie:(id)sender {
+	NSMutableArray* data = [NSMutableArray array];
+	for(NSInteger i = 1; i < 11; i++) {
+		CWSegmentData* segment = [[CWSegmentData alloc] init];
+		segment.value = @([self random:100]+50);
+		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+		segment.color = c;
+		segment.highlight = [NSColor lightGrayColor];
+		segment.label = [NSString stringWithFormat:@"Label %ld",i];
+		[data addObject:segment];
+	}
+	id win = [self.webview windowScriptObject];
+	CWPieChart* pc = [[CWPieChart alloc] initWithWindowScriptObject:win name:@"PIE1" width:300 height:300 data:data options:nil];
+	[pc addChart];
+}
+
+- (IBAction)addDoughnut:(id)sender {
+	NSMutableArray* data = [NSMutableArray array];
+	for(NSInteger i = 1; i < 11; i++) {
+		CWSegmentData* segment = [[CWSegmentData alloc] init];
+		segment.value = @([self random:100]+50);
+		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+		segment.color = c;
+		segment.highlight = [NSColor lightGrayColor];
+		segment.label = [NSString stringWithFormat:@"Label %ld",i];
+		[data addObject:segment];
+	}
+	id win = [self.webview windowScriptObject];
+	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWindowScriptObject:win name:@"Doughnut1" width:300 height:300 data:data options:nil];
+	[pc addChart];
 }
 
 - (IBAction)makeJSON:(id)sender {

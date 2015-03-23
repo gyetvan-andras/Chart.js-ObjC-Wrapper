@@ -74,7 +74,8 @@ function deleteChart(chartId) {
 
 function createContext(chartId, chartWidth,chartHeight) {
 	var div = document.createElement('div');
-	document.body.appendChild(div);
+//	document.body.appendChild(div);
+	document.body.insertBefore(div,document.body.firstChild);
 	div.id = chartId+'_div';
 	div.style.height='100%';
 	div.style.width='100%';
@@ -138,6 +139,17 @@ function addPieChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
 	var ctx = createContext(chartId,chartWidth,chartHeight);
 	
 	var chart = new Chart(ctx).Pie(data,options);
+	window[chartId] = chart;
+	return 'OK';
+}
+
+function addDoughnutChart(chartId,chartWidth,chartHeight,chartData, chartOptions) {
+	var data = JSON.parse(chartData);
+	var options = JSON.parse(chartOptions);
+	
+	var ctx = createContext(chartId,chartWidth,chartHeight);
+	
+	var chart = new Chart(ctx).Doughnut(data,options);
 	window[chartId] = chart;
 	return 'OK';
 }

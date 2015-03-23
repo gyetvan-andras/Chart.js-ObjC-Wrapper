@@ -8,6 +8,11 @@
 
 #import "CWLineChart.h"
 
+@interface CWLineChart ()
+@property (nonatomic, strong,readonly) CWLineChartData* data;
+@property (nonatomic, strong, readonly) CWLineChartOptions* options;
+@end
+
 @implementation CWLineChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWLineChartData*)data options:(CWLineChartOptions*) options {
 	self = [super initWithWindowScriptObject:win name:name width:w height:h];

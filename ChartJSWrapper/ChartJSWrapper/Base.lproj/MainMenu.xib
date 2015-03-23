@@ -671,14 +671,14 @@
         <window title="ChartJSWrapper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="800" height="452"/>
+            <rect key="contentRect" x="335" y="390" width="819" height="452"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="800" height="452"/>
+                <rect key="frame" x="0.0" y="0.0" width="819" height="452"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="7Ta-ur-Gux">
-                        <rect key="frame" x="20" y="55" width="760" height="377"/>
+                        <rect key="frame" x="20" y="55" width="779" height="377"/>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                             <nil key="identifier"/>
                         </webPreferences>
@@ -697,7 +697,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GGU-3y-a7J">
-                        <rect key="frame" x="709" y="7" width="77" height="32"/>
+                        <rect key="frame" x="728" y="7" width="77" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="65" id="57a-zR-b5G"/>
                         </constraints>
@@ -723,7 +723,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-mF-FJW">
-                        <rect key="frame" x="589" y="7" width="120" height="32"/>
+                        <rect key="frame" x="608" y="7" width="120" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="108" id="HfI-Yj-kNh"/>
                         </constraints>
@@ -774,6 +774,32 @@
                             <action selector="addPolarArea:" target="Voe-Tx-rLC" id="18k-SO-fOc"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-ys-TtZ">
+                        <rect key="frame" x="441" y="7" width="60" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="FHy-Kf-uq4"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Pie" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CER-n9-HeA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addPie:" target="Voe-Tx-rLC" id="HqC-cX-I57"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SD6-70-vp3">
+                        <rect key="frame" x="501" y="7" width="101" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="89" id="rd7-cU-P9N"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Doughnut" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mhk-hl-YFY">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addDoughnut:" target="Voe-Tx-rLC" id="HLW-XT-Mem"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="KYb-mF-FJW" secondAttribute="bottom" constant="14" id="1nw-F6-bzH"/>
@@ -782,21 +808,25 @@
                     <constraint firstAttribute="trailing" secondItem="7Ta-ur-Gux" secondAttribute="trailing" constant="20" id="Hf4-eF-puF"/>
                     <constraint firstItem="5wA-st-r16" firstAttribute="top" secondItem="7Ta-ur-Gux" secondAttribute="bottom" constant="20" id="Hfa-lu-stE"/>
                     <constraint firstItem="7Ta-ur-Gux" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="KsH-2e-akl"/>
+                    <constraint firstItem="EDM-ys-TtZ" firstAttribute="leading" secondItem="dtI-X9-3ql" secondAttribute="trailing" constant="12" id="Kxs-pj-kQx"/>
                     <constraint firstAttribute="bottom" secondItem="5wA-st-r16" secondAttribute="bottom" constant="14" id="U7d-Na-zCe"/>
                     <constraint firstAttribute="trailing" secondItem="GGU-3y-a7J" secondAttribute="trailing" constant="20" id="Wxe-4G-rcu"/>
                     <constraint firstAttribute="bottom" secondItem="dtI-X9-3ql" secondAttribute="bottom" constant="14" id="a96-UH-62w"/>
+                    <constraint firstAttribute="bottom" secondItem="EDM-ys-TtZ" secondAttribute="bottom" constant="14" id="bFd-cz-d9b"/>
                     <constraint firstItem="GGU-3y-a7J" firstAttribute="leading" secondItem="KYb-mF-FJW" secondAttribute="trailing" constant="12" id="fbv-MR-sqG"/>
                     <constraint firstItem="EZv-H6-8b5" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="gEM-rq-YL4"/>
                     <constraint firstAttribute="bottom" secondItem="EZv-H6-8b5" secondAttribute="bottom" constant="14" id="lf1-2j-IQ7"/>
                     <constraint firstItem="5wA-st-r16" firstAttribute="leading" secondItem="EZv-H6-8b5" secondAttribute="trailing" constant="12" id="neZ-jf-CUs"/>
                     <constraint firstAttribute="bottom" secondItem="RfF-qM-efg" secondAttribute="bottom" constant="14" id="ocF-0s-66y"/>
                     <constraint firstItem="ah0-ah-2td" firstAttribute="leading" secondItem="5wA-st-r16" secondAttribute="trailing" constant="12" id="q2C-dv-uqZ"/>
+                    <constraint firstAttribute="bottom" secondItem="SD6-70-vp3" secondAttribute="bottom" constant="14" id="rH8-cw-DEL"/>
                     <constraint firstAttribute="bottom" secondItem="ah0-ah-2td" secondAttribute="bottom" constant="14" id="vOC-f7-24K"/>
+                    <constraint firstItem="SD6-70-vp3" firstAttribute="leading" secondItem="EDM-ys-TtZ" secondAttribute="trailing" constant="12" id="vl4-DI-hbK"/>
                     <constraint firstItem="RfF-qM-efg" firstAttribute="leading" secondItem="ah0-ah-2td" secondAttribute="trailing" constant="12" id="vrr-dl-6yL"/>
                     <constraint firstAttribute="bottom" secondItem="GGU-3y-a7J" secondAttribute="bottom" constant="14" id="xBm-Sy-xNM"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="480" y="404"/>
+            <point key="canvasLocation" x="489.5" y="404"/>
         </window>
     </objects>
 </document>
