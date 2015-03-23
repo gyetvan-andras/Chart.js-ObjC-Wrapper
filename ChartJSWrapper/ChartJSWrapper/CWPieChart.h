@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Gyetván András. All rights reserved.
 //
 
-#import "CWChart.h"
+#import "CWPolarAreaChart.h"
 #import "CWPieChartOptions.h"
-@interface CWPieChart : CWChart
+@interface CWPieChart : CWPolarAreaChart
 @property (nonatomic, strong, readonly) CWPieChartOptions* options;
 @property (nonatomic, strong,readonly) NSArray* data;
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(NSArray*)data options:(CWPieChartOptions*) options;
-- (void) setValue:(NSNumber*)val inSegment:(NSInteger)segment;
+//- (void) setValue:(NSNumber*)val inSegment:(NSInteger)segment;
 @end

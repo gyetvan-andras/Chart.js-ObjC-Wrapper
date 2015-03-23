@@ -27,6 +27,13 @@
 	id res = [self.win callWebScriptMethod:@"updateChart" withArguments:params];
 	NSLog(@"Result - update is:%@",res);
 }
+
+- (void) removeChart {
+	NSArray* params = @[self.name];
+	id res = [self.win callWebScriptMethod:@"deleteChart" withArguments:params];
+	NSLog(@"Result - deleteChart is:%@",res);
+}
+
 - (void) addChart {
 //	NSString* dataJSON = [ls JSON];
 //	id win = [self.webview windowScriptObject];

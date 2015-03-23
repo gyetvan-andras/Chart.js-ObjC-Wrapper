@@ -13,7 +13,6 @@
 
 @property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet WebView *webview;
-- (IBAction)makeJSON:(id)sender;
 - (IBAction)addRadar:(id)sender;
 - (IBAction)addLine:(id)sender;
 - (IBAction)removeLine:(id)sender;
@@ -23,7 +22,14 @@
 - (IBAction)addPie:(id)sender;
 - (IBAction)addDoughnut:(id)sender;
 
+- (IBAction)changePie:(id)sender;
+- (IBAction)changeBar:(id)sender;
+- (IBAction)delAddPie:(id)sender;
+
 @property (nonatomic, strong) CWLineChart* lineChart;
+@property (nonatomic, strong) CWPieChart* pieChart;
+@property (nonatomic, strong) CWBarChart* barChart;
+
 @end
 
 @implementation AppDelegate
@@ -75,11 +81,8 @@
 }
 
 - (IBAction)removeLine:(id)sender {
-	id win = [self.webview windowScriptObject];
-	NSArray* params = @[@"LineChart1"];
-	
-	id res = [win callWebScriptMethod:@"deleteChart" withArguments:params];
-	NSLog(@"Result: %@",res);
+	[self.lineChart removeData];
+	[self.lineChart addData:@[@([self random:100]),@([self random:100])/*,@([self random:100]),@([self random:100])*/] label:@"W"];
 }
 
 - (IBAction)changeLine:(id)sender {
@@ -94,7 +97,7 @@
 	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D"]];
 	NSMutableArray* datasets = [NSMutableArray array];
 	for(NSInteger i = 1; i < 4; i++) {
-		CWBarDataSet* ds = [[CWBarDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
+		CWBarDataSet* ds = [[CWBarDataSet alloc] initWithData:@[@([self random:100]+50),@([self random:100]+50),@([self random:100]+50),@([self random:100]+50)]];
 		ds.label = [NSString stringWithFormat:@"Label %ld",i];
 		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
 		ds.fillColor = c;
@@ -106,6 +109,7 @@
 	CWBarChartData* bcd = [[CWBarChartData alloc] initWithLabels:labels andDataSet:datasets];
 	CWBarChart* bc = [[CWBarChart alloc] initWithWindowScriptObject:win name:@"BarChart1" width:600 height:250 data:bcd options:nil];
 	[bc addChart];
+	self.barChart = bc;
 }
 
 - (IBAction)addPolarArea:(id)sender {
@@ -115,12 +119,12 @@
 		segment.value = @([self random:100]+50);
 		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
 		segment.color = c;
-		segment.highlight = [NSColor lightGrayColor];
+		segment.highlight = [NSColor grayColor];
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:300 height:300 data:data options:nil];
+	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:150 height:150 data:data options:nil];
 	[pac addChart];
 }
 
@@ -131,13 +135,14 @@
 		segment.value = @([self random:100]+50);
 		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
 		segment.color = c;
-		segment.highlight = [NSColor lightGrayColor];
+		segment.highlight = [NSColor grayColor];
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWPieChart* pc = [[CWPieChart alloc] initWithWindowScriptObject:win name:@"PIE1" width:300 height:300 data:data options:nil];
+	CWPieChart* pc = [[CWPieChart alloc] initWithWindowScriptObject:win name:@"PIE1" width:150 height:150 data:data options:nil];
 	[pc addChart];
+	self.pieChart = pc;
 }
 
 - (IBAction)addDoughnut:(id)sender {
@@ -147,29 +152,42 @@
 		segment.value = @([self random:100]+50);
 		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
 		segment.color = c;
-		segment.highlight = [NSColor lightGrayColor];
+		segment.highlight = [NSColor grayColor];
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWindowScriptObject:win name:@"Doughnut1" width:300 height:300 data:data options:nil];
+	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWindowScriptObject:win name:@"Doughnut1" width:150 height:150 data:data options:nil];
 	[pc addChart];
 }
 
-- (IBAction)makeJSON:(id)sender {
-	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C"]];
-	NSMutableArray* datasets = [NSMutableArray array];
+- (IBAction)changePie:(id)sender {
 	for(NSInteger i = 1; i < 11; i++) {
-		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
-		ds.label = [NSString stringWithFormat:@"Label %ld",i];
-		NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
-		ds.fillColor = c;
-		ds.strokeColor = [NSColor grayColor];
-		[datasets addObject:ds];
+		[self.pieChart setValue:@([self random:100]+50) inSegment:i-1];
 	}
-	CWLineChartData* ls = [[CWLineChartData alloc] initWithLabels:labels andDataSet:datasets];
-	NSString* json = [ls JSON];
-	NSLog(@"JSON:%@",json);
+	[self.pieChart update];
+}
+
+- (IBAction)changeBar:(id)sender {
+	for(NSInteger i = 1; i < 4; i++) {
+		[self.barChart setValue:@([self random:100]+50) inDataset:i-1 at:0];
+		[self.barChart setValue:@([self random:100]+50) inDataset:i-1 at:1];
+		[self.barChart setValue:@([self random:100]+50) inDataset:i-1 at:2];
+		[self.barChart setValue:@([self random:100]+50) inDataset:i-1 at:3];
+	}
+	[self.barChart update];
+}
+
+- (IBAction)delAddPie:(id)sender {
+	[self.pieChart removeDataAt:@(1)];
+	CWSegmentData* segment = [[CWSegmentData alloc] init];
+	segment.value = @([self random:100]+50);
+	NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+	segment.color = c;
+	segment.highlight = [NSColor grayColor];
+	segment.label = @"NEW SEGMENT";
+	[self.pieChart addData:segment index:@(3)];
+//	[self.lineChart addData:@[@([self random:100]),@([self random:100])/*,@([self random:100]),@([self random:100])*/] label:@"W"];
 }
 
 - (IBAction)addRadar:(id)sender {

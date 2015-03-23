@@ -46,4 +46,24 @@
 	NSLog(@"Result setPointValue is:%@",res);
 }
 
+- (void) addData:(NSArray*)values label:(NSString*)label {
+	NSMutableArray* safeArray = [NSMutableArray arrayWithArray:values];
+	while (safeArray.count > self.data.datasets.count) {
+		[safeArray removeLastObject];
+	};
+	id jsonValues = [self convertToJSON:safeArray];
+	NSString* valuesJSON = [CWObject toJSONString:jsonValues];
+	
+	NSArray* params = @[self.name,valuesJSON,label];
+	id res = [self.win callWebScriptMethod:@"addPointData" withArguments:params];
+	NSLog(@"Result addPointData is:%@",res);
+}
+
+- (void) removeData {
+	NSArray* params = @[self.name];
+	id res = [self.win callWebScriptMethod:@"removePointData" withArguments:params];
+	NSLog(@"Result - removePointData is:%@",res);
+	
+}
+
 @end

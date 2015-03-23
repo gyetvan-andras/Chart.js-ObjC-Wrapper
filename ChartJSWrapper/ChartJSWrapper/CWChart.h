@@ -16,7 +16,7 @@
 @property (nonatomic, readonly) NSInteger height;
 
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h;
--(void) addChart;
+- (void) addChart;
 - (void) update;
-
+- (void) removeChart;
 @end

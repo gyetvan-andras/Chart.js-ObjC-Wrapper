@@ -6,11 +6,10 @@
 //  Copyright (c) 2015 Gyetván András. All rights reserved.
 //
 
-#import "CWChart.h"
+#import "CWLineChart.h"
 #import "CWBarChartData.h"
 #import "CWBarChartOptions.h"
-@interface CWBarChart : CWChart
+@interface CWBarChart : CWLineChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWBarChartData*)data options:(CWBarChartOptions*) options;
-- (void) setValue:(NSNumber*)val inDataset:(NSInteger)dataset at:(NSInteger)data;
 
 @end

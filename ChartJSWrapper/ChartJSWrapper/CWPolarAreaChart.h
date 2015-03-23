@@ -8,9 +8,12 @@
 
 #import "CWChart.h"
 #import "CWPolarAreaChartOptions.h"
-
+#import "CWSegmentData.h"
 @interface CWPolarAreaChart : CWChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(NSArray*)data options:(CWPolarAreaChartOptions*) options;
 - (void) setValue:(NSNumber*)val inSegment:(NSInteger)segment;
+//.addData( segmentData, index )
+- (void) addData:(CWSegmentData*)data index:(NSNumber*)index;
+- (void) removeDataAt:(NSNumber*)index;
 
 @end

@@ -13,5 +13,6 @@
 @interface CWLineChart : CWChart
 - (instancetype) initWithWindowScriptObject:(id) win name:(NSString*)name width:(NSInteger)w height:(NSInteger)h data:(CWLineChartData*)data options:(CWLineChartOptions*) options;
 - (void) setValue:(NSNumber*)val inDataset:(NSInteger)dataset at:(NSInteger)data;
-
+- (void) addData:(NSArray*)values label:(NSString*)label;
+- (void) removeData;
 @end

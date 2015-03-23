@@ -51,4 +51,24 @@
 	NSLog(@"Result setSegmentValue is:%@",res);
 }
 
+- (void) addData:(CWSegmentData*)data index:(NSNumber*)index {
+	id jsonData = [self convertToJSON:data];
+	NSString* dataJSON = [CWObject toJSONString:jsonData];
+	NSArray* params = @[self.name,dataJSON,index];
+	
+	id res = [self.win callWebScriptMethod:@"addSegmentData" withArguments:params];
+	
+	NSLog(@"Result addSegmentData is:%@",res);
+	
+}
+
+- (void) removeDataAt:(NSNumber*)index {
+	NSArray* params = @[self.name,index];
+	
+	id res = [self.win callWebScriptMethod:@"removeSegmentData" withArguments:params];
+	
+	NSLog(@"Result removeSegmentData is:%@",res);
+	
+}
+
 @end
