@@ -57,9 +57,7 @@
 }
 
 - (NSInteger) random:(NSInteger) max {
-	int r = rand();
-	float ir = (float)r/(float)RAND_MAX;
-	return (NSInteger)(ir*(float)max) - 50;
+	return (NSInteger)arc4random_uniform((u_int32_t)max);
 }
 
 - (IBAction)addLine:(id)sender {
@@ -87,10 +85,12 @@
 }
 
 - (IBAction)changeLine:(id)sender {
-	[self.lineChart setValue:@([self random:100]) inDataset:0 at:0];
-	[self.lineChart setValue:@([self random:100]) inDataset:0 at:1];
-	[self.lineChart setValue:@([self random:100]) inDataset:0 at:2];
-	[self.lineChart setValue:@([self random:100]) inDataset:0 at:3];
+	for(NSInteger i = 1; i < 4; i++) {
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:0];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:1];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:2];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:3];
+	}
 	[self.lineChart update];
 }
 
@@ -101,7 +101,7 @@
 		CWBarDataSet* ds = [[CWBarDataSet alloc] initWithData:@[@([self random:100]+50),@([self random:100]+50),@([self random:100]+50),@([self random:100]+50)]];
 		ds.label = [NSString stringWithFormat:@"Label %ld",i];
 		NSColor* c1 = [[CWColors sharedColors] pickColor];
-		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.8f];
 		ds.fillColor = c2;
 		ds.strokeColor = c1;
 		[datasets addObject:ds];
@@ -120,14 +120,14 @@
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
 		NSColor* c1 = [[CWColors sharedColors] pickColor];
-		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.8f];
 		segment.color = c2;
 		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:150 height:150 data:data options:nil];
+	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWindowScriptObject:win name:@"PAC1" width:300 height:300 data:data options:nil];
 	[pac addChart];
 }
 
@@ -137,14 +137,14 @@
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
 		NSColor* c1 = [[CWColors sharedColors] pickColor];
-		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.8f];
 		segment.color = c2;
 		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWPieChart* pc = [[CWPieChart alloc] initWithWindowScriptObject:win name:@"PIE1" width:150 height:150 data:data options:nil];
+	CWPieChart* pc = [[CWPieChart alloc] initWithWindowScriptObject:win name:@"PIE1" width:300 height:300 data:data options:nil];
 	[pc addChart];
 	self.pieChart = pc;
 }
@@ -155,14 +155,14 @@
 		CWSegmentData* segment = [[CWSegmentData alloc] init];
 		segment.value = @([self random:100]+50);
 		NSColor* c1 = [[CWColors sharedColors] pickColor];
-		NSColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		NSColor* c2 = [c1 colorWithAlphaComponent:0.8f];
 		segment.color = c2;
 		segment.highlight = c1;
 		segment.label = [NSString stringWithFormat:@"Label %ld",i];
 		[data addObject:segment];
 	}
 	id win = [self.webview windowScriptObject];
-	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWindowScriptObject:win name:@"Doughnut1" width:150 height:150 data:data options:nil];
+	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWindowScriptObject:win name:@"Doughnut1" width:300 height:300 data:data options:nil];
 	[pc addChart];
 }
 
@@ -187,7 +187,7 @@
 	[self.pieChart removeDataAt:@(1)];
 	CWSegmentData* segment = [[CWSegmentData alloc] init];
 	segment.value = @([self random:100]+50);
-	NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.5f];
+	NSColor* c = [[NSColor lightGrayColor] colorWithAlphaComponent:0.8f];
 	segment.color = c;
 	segment.highlight = [NSColor grayColor];
 	segment.label = @"NEW SEGMENT";
@@ -210,7 +210,7 @@
 	id win = [self.webview windowScriptObject];
 	
 	CWRadarChartData* rcd = [[CWRadarChartData alloc] initWithLabels:labels andDataSet:datasets];
-	CWRadarChart* rc = [[CWRadarChart alloc] initWithWindowScriptObject:win name:@"RadarChart1" width:600 height:250 data:rcd options:nil];
+	CWRadarChart* rc = [[CWRadarChart alloc] initWithWindowScriptObject:win name:@"RadarChart1" width:600 height:300 data:rcd options:nil];
 	[rc addChart];
 }
 

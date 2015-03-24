@@ -18,9 +18,7 @@ static CWColors* _sharedColors = nil;
 @implementation CWColors
 
 - (NSInteger) random:(NSInteger) max {
-	int r = rand();
-	float ir = (float)r/(float)RAND_MAX;
-	return (NSInteger)(ir*(float)max);
+	return (NSInteger)arc4random_uniform((u_int32_t)max);
 }
 
 - (NSColor*) pickColor {
@@ -69,8 +67,8 @@ static CWColors* _sharedColors = nil;
 	NSInteger r = [components[0] integerValue];
 	NSInteger g = [components[1] integerValue];
 	NSInteger b = [components[2] integerValue];
-	NSInteger a = [components[0] integerValue];
-	NSColor* col = [NSColor colorWithDeviceRed:(CGFloat)r/255.0f green:(CGFloat)g/255.0f blue:(CGFloat)b/255.0f alpha:(CGFloat)a/255.0f];
+	CGFloat a = [components[0] floatValue];
+	NSColor* col = [NSColor colorWithDeviceRed:(CGFloat)r/255.0f green:(CGFloat)g/255.0f blue:(CGFloat)b/255.0f alpha:a];
 	return col;
 }
 
