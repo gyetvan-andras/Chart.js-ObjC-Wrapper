@@ -27,7 +27,6 @@
 #import "CWPolarAreaChart.h"
 #import "CWPieChartOptions.h"
 #import "CWPieChart.h"
-//#import "CWDoughnutChartOptions.h"
 #import "CWDoughnutChart.h"
 #import "CWColors.h"
 
