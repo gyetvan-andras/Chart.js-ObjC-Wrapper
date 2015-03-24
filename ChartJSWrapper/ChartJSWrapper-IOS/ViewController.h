@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PulldownMenu.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<PulldownMenuDelegate, UIScrollViewDelegate, UINavigationBarDelegate>
 
 
 @end

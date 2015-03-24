@@ -75,7 +75,7 @@
 //	id win = [self.webview windowScriptObject];
 	
 	CWLineChartData* lcd = [[CWLineChartData alloc] initWithLabels:labels andDataSet:datasets];
-	self.lineChart = [[CWLineChart alloc] initWithWebView:self.webview name:@"LineChart1" width:600 height:250 data:lcd options:nil];
+	self.lineChart = [[CWLineChart alloc] initWithWebView:self.webview name:@"LineChart1" width:600 height:300 data:lcd options:nil];
 	[self.lineChart addChart];
 }
 
@@ -109,7 +109,7 @@
 //	id win = [self.webview windowScriptObject];
 	
 	CWBarChartData* bcd = [[CWBarChartData alloc] initWithLabels:labels andDataSet:datasets];
-	CWBarChart* bc = [[CWBarChart alloc] initWithWebView:self.webview name:@"BarChart1" width:600 height:250 data:bcd options:nil];
+	CWBarChart* bc = [[CWBarChart alloc] initWithWebView:self.webview name:@"BarChart1" width:600 height:300 data:bcd options:nil];
 	[bc addChart];
 	self.barChart = bc;
 }
@@ -127,7 +127,7 @@
 		[data addObject:segment];
 	}
 //	id win = [self.webview windowScriptObject];
-	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWebView:self.webview name:@"PAC1" width:300 height:300 data:data options:nil];
+	CWPolarAreaChart* pac = [[CWPolarAreaChart alloc] initWithWebView:self.webview name:@"PAC1" width:600 height:300 data:data options:nil];
 	[pac addChart];
 }
 
@@ -144,7 +144,7 @@
 		[data addObject:segment];
 	}
 //	id win = [self.webview windowScriptObject];
-	CWPieChart* pc = [[CWPieChart alloc] initWithWebView:self.webview name:@"PIE1" width:300 height:300 data:data options:nil];
+	CWPieChart* pc = [[CWPieChart alloc] initWithWebView:self.webview name:@"PIE1" width:600 height:300 data:data options:nil];
 	[pc addChart];
 	self.pieChart = pc;
 }
@@ -162,7 +162,7 @@
 		[data addObject:segment];
 	}
 //	id win = [self.webview windowScriptObject];
-	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWebView:self.webview name:@"Doughnut1" width:300 height:300 data:data options:nil];
+	CWDoughnutChart* pc = [[CWDoughnutChart alloc] initWithWebView:self.webview name:@"Doughnut1" width:600 height:300 data:data options:nil];
 	[pc addChart];
 }
 

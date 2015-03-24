@@ -80,6 +80,9 @@
 		B33CF3011AC19E8C00CA33B7 /* cw.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F81AC19E8C00CA33B7 /* cw.js */; };
 		B33CF3021AC19E8C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F91AC19E8C00CA33B7 /* datasets.js */; };
 		B33CF3031AC19E8C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F91AC19E8C00CA33B7 /* datasets.js */; };
+		B33CF3131AC1B2C200CA33B7 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = B33CF3121AC1B2C200CA33B7 /* img.png */; };
+		B33CF3151AC1E43B00CA33B7 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B33CF3141AC1E43B00CA33B7 /* settings@2x.png */; };
+		B33CF3191AC1EBE800CA33B7 /* PulldownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF3181AC1EBE800CA33B7 /* PulldownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +163,10 @@
 		B33CF2F71AC19E8C00CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = cw.html; path = CW/Assets/cw.html; sourceTree = SOURCE_ROOT; };
 		B33CF2F81AC19E8C00CA33B7 /* cw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = cw.js; path = CW/Assets/cw.js; sourceTree = SOURCE_ROOT; };
 		B33CF2F91AC19E8C00CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = datasets.js; path = CW/Assets/datasets.js; sourceTree = SOURCE_ROOT; };
+		B33CF3121AC1B2C200CA33B7 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		B33CF3141AC1E43B00CA33B7 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		B33CF3171AC1EBE800CA33B7 /* PulldownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownMenu.h; sourceTree = "<group>"; };
+		B33CF3181AC1EBE800CA33B7 /* PulldownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,7 +375,7 @@
 		B33CF2491AC1707E00CA33B7 /* ChartJSWrapper-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF28E1AC177BC00CA33B7 /* Frameworks */,
+				B33CF3161AC1EBE800CA33B7 /* PullDownMenu */,
 				B33CF24E1AC1707E00CA33B7 /* AppDelegate.h */,
 				B33CF24F1AC1707E00CA33B7 /* AppDelegate.m */,
 				B33CF2511AC1707E00CA33B7 /* ViewController.h */,
@@ -376,7 +383,10 @@
 				B33CF2541AC1707E00CA33B7 /* Main.storyboard */,
 				B33CF2571AC1707E00CA33B7 /* Images.xcassets */,
 				B33CF2591AC1707E00CA33B7 /* LaunchScreen.xib */,
+				B33CF3121AC1B2C200CA33B7 /* img.png */,
+				B33CF3141AC1E43B00CA33B7 /* settings@2x.png */,
 				B33CF24A1AC1707E00CA33B7 /* Supporting Files */,
+				B33CF28E1AC177BC00CA33B7 /* Frameworks */,
 			);
 			path = "ChartJSWrapper-IOS";
 			sourceTree = "<group>";
@@ -396,6 +406,15 @@
 				B33CF28C1AC1762000CA33B7 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33CF3161AC1EBE800CA33B7 /* PullDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF3171AC1EBE800CA33B7 /* PulldownMenu.h */,
+				B33CF3181AC1EBE800CA33B7 /* PulldownMenu.m */,
+			);
+			path = PullDownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +513,8 @@
 				B33CF2561AC1707E00CA33B7 /* Main.storyboard in Resources */,
 				B33CF2FB1AC19E8C00CA33B7 /* Chart.js in Resources */,
 				B33CF2FD1AC19E8C00CA33B7 /* Chart.min.js in Resources */,
+				B33CF3151AC1E43B00CA33B7 /* settings@2x.png in Resources */,
+				B33CF3131AC1B2C200CA33B7 /* img.png in Resources */,
 				B33CF25B1AC1707E00CA33B7 /* LaunchScreen.xib in Resources */,
 				B33CF2581AC1707E00CA33B7 /* Images.xcassets in Resources */,
 				B33CF3011AC19E8C00CA33B7 /* cw.js in Resources */,
@@ -558,6 +579,7 @@
 				B33CF2CE1AC19E0100CA33B7 /* CWRadarChartData.m in Sources */,
 				B33CF2A61AC19D8E00CA33B7 /* CWData.m in Sources */,
 				B33CF2D01AC19E0100CA33B7 /* CWRadarChartOptions.m in Sources */,
+				B33CF3191AC1EBE800CA33B7 /* PulldownMenu.m in Sources */,
 				B33CF2A01AC19D8E00CA33B7 /* CWBoolean.m in Sources */,
 				B33CF2C01AC19DE500CA33B7 /* CWLineChart.m in Sources */,
 				B33CF2C41AC19DE500CA33B7 /* CWLineChartOptions.m in Sources */,
