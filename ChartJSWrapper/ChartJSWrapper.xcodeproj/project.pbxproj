@@ -12,105 +12,154 @@
 		B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1951ABC263600CA33B7 /* Images.xcassets */; };
 		B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1971ABC263600CA33B7 /* MainMenu.xib */; };
 		B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1B61ABC270600CA33B7 /* WebKit.framework */; };
-		B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1BD1ABC9FA100CA33B7 /* CWData.m */; };
-		B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */; };
-		B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */; };
 		B33CF1EB1ABCAC1300CA33B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */; };
-		B33CF1EE1ABCB59D00CA33B7 /* CWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */; };
-		B33CF1F21ABDD0B100CA33B7 /* CWPointDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */; };
-		B33CF1F51ABDE29E00CA33B7 /* CWLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */; };
-		B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */; };
-		B33CF1FE1ABDF6F400CA33B7 /* CWLineChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */; };
-		B33CF2011ABDF99500CA33B7 /* CWBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2001ABDF99500CA33B7 /* CWBoolean.m */; };
-		B33CF2041ABEF9DA00CA33B7 /* CWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2031ABEF9DA00CA33B7 /* CWChart.m */; };
-		B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */; };
-		B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */; };
-		B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */; };
-		B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */; };
-		B33CF2171ABF351C00CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2131ABF351C00CA33B7 /* Chart.js */; };
-		B33CF2181ABF351C00CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2141ABF351C00CA33B7 /* Chart.min.js */; };
-		B33CF2191ABF351C00CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2151ABF351C00CA33B7 /* cw.html */; };
-		B33CF21A1ABF351C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2161ABF351C00CA33B7 /* datasets.js */; };
-		B33CF21E1ABF35E600CA33B7 /* CWBarDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */; };
-		B33CF2211ABF369000CA33B7 /* CWBarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2201ABF369000CA33B7 /* CWBarChartData.m */; };
-		B33CF2241ABF372600CA33B7 /* CWBarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */; };
-		B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2261ABF388E00CA33B7 /* CWBarChart.m */; };
-		B33CF22A1ABF3BF900CA33B7 /* CWSegmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */; };
-		B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */; };
-		B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */; };
-		B33CF2351ABF5D3900CA33B7 /* CWPieChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */; };
-		B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */; };
-		B33CF23B1ABFFE7600CA33B7 /* CWDoughnutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */; };
-		B33CF23D1AC0876B00CA33B7 /* cw.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF23C1AC0876B00CA33B7 /* cw.js */; };
-		B33CF2431AC0A95500CA33B7 /* CWColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2421AC0A95500CA33B7 /* CWColors.m */; };
+		B33CF24D1AC1707E00CA33B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF24C1AC1707E00CA33B7 /* main.m */; };
+		B33CF2501AC1707E00CA33B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF24F1AC1707E00CA33B7 /* AppDelegate.m */; };
+		B33CF2531AC1707E00CA33B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2521AC1707E00CA33B7 /* ViewController.m */; };
+		B33CF2561AC1707E00CA33B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2541AC1707E00CA33B7 /* Main.storyboard */; };
+		B33CF2581AC1707E00CA33B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2571AC1707E00CA33B7 /* Images.xcassets */; };
+		B33CF25B1AC1707E00CA33B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2591AC1707E00CA33B7 /* LaunchScreen.xib */; };
+		B33CF28D1AC1762000CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF28C1AC1762000CA33B7 /* WebKit.framework */; };
+		B33CF29F1AC19D8E00CA33B7 /* CWBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2921AC19D8E00CA33B7 /* CWBoolean.m */; };
+		B33CF2A01AC19D8E00CA33B7 /* CWBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2921AC19D8E00CA33B7 /* CWBoolean.m */; };
+		B33CF2A11AC19D8E00CA33B7 /* CWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2941AC19D8E00CA33B7 /* CWChart.m */; };
+		B33CF2A21AC19D8E00CA33B7 /* CWChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2941AC19D8E00CA33B7 /* CWChart.m */; };
+		B33CF2A31AC19D8E00CA33B7 /* CWColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2961AC19D8E00CA33B7 /* CWColors.m */; };
+		B33CF2A41AC19D8E00CA33B7 /* CWColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2961AC19D8E00CA33B7 /* CWColors.m */; };
+		B33CF2A51AC19D8E00CA33B7 /* CWData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2981AC19D8E00CA33B7 /* CWData.m */; };
+		B33CF2A61AC19D8E00CA33B7 /* CWData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2981AC19D8E00CA33B7 /* CWData.m */; };
+		B33CF2A71AC19D8E00CA33B7 /* CWGlobalOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29A1AC19D8E00CA33B7 /* CWGlobalOptions.m */; };
+		B33CF2A81AC19D8E00CA33B7 /* CWGlobalOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29A1AC19D8E00CA33B7 /* CWGlobalOptions.m */; };
+		B33CF2A91AC19D8E00CA33B7 /* CWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29C1AC19D8E00CA33B7 /* CWObject.m */; };
+		B33CF2AA1AC19D8E00CA33B7 /* CWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29C1AC19D8E00CA33B7 /* CWObject.m */; };
+		B33CF2AB1AC19D8E00CA33B7 /* CWSegmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29E1AC19D8E00CA33B7 /* CWSegmentData.m */; };
+		B33CF2AC1AC19D8E00CA33B7 /* CWSegmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF29E1AC19D8E00CA33B7 /* CWSegmentData.m */; };
+		B33CF2B31AC19DBF00CA33B7 /* CWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2AE1AC19DBF00CA33B7 /* CWDataSet.m */; };
+		B33CF2B41AC19DBF00CA33B7 /* CWDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2AE1AC19DBF00CA33B7 /* CWDataSet.m */; };
+		B33CF2B51AC19DBF00CA33B7 /* CWLabelledData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2B01AC19DBF00CA33B7 /* CWLabelledData.m */; };
+		B33CF2B61AC19DBF00CA33B7 /* CWLabelledData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2B01AC19DBF00CA33B7 /* CWLabelledData.m */; };
+		B33CF2B71AC19DBF00CA33B7 /* CWPointDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2B21AC19DBF00CA33B7 /* CWPointDataSet.m */; };
+		B33CF2B81AC19DBF00CA33B7 /* CWPointDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2B21AC19DBF00CA33B7 /* CWPointDataSet.m */; };
+		B33CF2BF1AC19DE500CA33B7 /* CWLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BA1AC19DE500CA33B7 /* CWLineChart.m */; };
+		B33CF2C01AC19DE500CA33B7 /* CWLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BA1AC19DE500CA33B7 /* CWLineChart.m */; };
+		B33CF2C11AC19DE500CA33B7 /* CWLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BC1AC19DE500CA33B7 /* CWLineChartData.m */; };
+		B33CF2C21AC19DE500CA33B7 /* CWLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BC1AC19DE500CA33B7 /* CWLineChartData.m */; };
+		B33CF2C31AC19DE500CA33B7 /* CWLineChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BE1AC19DE500CA33B7 /* CWLineChartOptions.m */; };
+		B33CF2C41AC19DE500CA33B7 /* CWLineChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2BE1AC19DE500CA33B7 /* CWLineChartOptions.m */; };
+		B33CF2CB1AC19E0100CA33B7 /* CWRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2C61AC19E0100CA33B7 /* CWRadarChart.m */; };
+		B33CF2CC1AC19E0100CA33B7 /* CWRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2C61AC19E0100CA33B7 /* CWRadarChart.m */; };
+		B33CF2CD1AC19E0100CA33B7 /* CWRadarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2C81AC19E0100CA33B7 /* CWRadarChartData.m */; };
+		B33CF2CE1AC19E0100CA33B7 /* CWRadarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2C81AC19E0100CA33B7 /* CWRadarChartData.m */; };
+		B33CF2CF1AC19E0100CA33B7 /* CWRadarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2CA1AC19E0100CA33B7 /* CWRadarChartOptions.m */; };
+		B33CF2D01AC19E0100CA33B7 /* CWRadarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2CA1AC19E0100CA33B7 /* CWRadarChartOptions.m */; };
+		B33CF2D91AC19E1B00CA33B7 /* CWBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D21AC19E1B00CA33B7 /* CWBarChart.m */; };
+		B33CF2DA1AC19E1B00CA33B7 /* CWBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D21AC19E1B00CA33B7 /* CWBarChart.m */; };
+		B33CF2DB1AC19E1B00CA33B7 /* CWBarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D41AC19E1B00CA33B7 /* CWBarChartData.m */; };
+		B33CF2DC1AC19E1B00CA33B7 /* CWBarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D41AC19E1B00CA33B7 /* CWBarChartData.m */; };
+		B33CF2DD1AC19E1B00CA33B7 /* CWBarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D61AC19E1B00CA33B7 /* CWBarChartOptions.m */; };
+		B33CF2DE1AC19E1B00CA33B7 /* CWBarChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D61AC19E1B00CA33B7 /* CWBarChartOptions.m */; };
+		B33CF2DF1AC19E1B00CA33B7 /* CWBarDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D81AC19E1B00CA33B7 /* CWBarDataSet.m */; };
+		B33CF2E01AC19E1B00CA33B7 /* CWBarDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2D81AC19E1B00CA33B7 /* CWBarDataSet.m */; };
+		B33CF2E51AC19E3B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2E21AC19E3B00CA33B7 /* CWPolarAreaChart.m */; };
+		B33CF2E61AC19E3B00CA33B7 /* CWPolarAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2E21AC19E3B00CA33B7 /* CWPolarAreaChart.m */; };
+		B33CF2E71AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2E41AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m */; };
+		B33CF2E81AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2E41AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m */; };
+		B33CF2EF1AC19E6200CA33B7 /* CWDoughnutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EA1AC19E6200CA33B7 /* CWDoughnutChart.m */; };
+		B33CF2F01AC19E6200CA33B7 /* CWDoughnutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EA1AC19E6200CA33B7 /* CWDoughnutChart.m */; };
+		B33CF2F11AC19E6200CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EC1AC19E6200CA33B7 /* CWPieChart.m */; };
+		B33CF2F21AC19E6200CA33B7 /* CWPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EC1AC19E6200CA33B7 /* CWPieChart.m */; };
+		B33CF2F31AC19E6200CA33B7 /* CWPieChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EE1AC19E6200CA33B7 /* CWPieChartOptions.m */; };
+		B33CF2F41AC19E6200CA33B7 /* CWPieChartOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2EE1AC19E6200CA33B7 /* CWPieChartOptions.m */; };
+		B33CF2FA1AC19E8C00CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F51AC19E8C00CA33B7 /* Chart.js */; };
+		B33CF2FB1AC19E8C00CA33B7 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F51AC19E8C00CA33B7 /* Chart.js */; };
+		B33CF2FC1AC19E8C00CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F61AC19E8C00CA33B7 /* Chart.min.js */; };
+		B33CF2FD1AC19E8C00CA33B7 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F61AC19E8C00CA33B7 /* Chart.min.js */; };
+		B33CF2FE1AC19E8C00CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F71AC19E8C00CA33B7 /* cw.html */; };
+		B33CF2FF1AC19E8C00CA33B7 /* cw.html in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F71AC19E8C00CA33B7 /* cw.html */; };
+		B33CF3001AC19E8C00CA33B7 /* cw.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F81AC19E8C00CA33B7 /* cw.js */; };
+		B33CF3011AC19E8C00CA33B7 /* cw.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F81AC19E8C00CA33B7 /* cw.js */; };
+		B33CF3021AC19E8C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F91AC19E8C00CA33B7 /* datasets.js */; };
+		B33CF3031AC19E8C00CA33B7 /* datasets.js in Resources */ = {isa = PBXBuildFile; fileRef = B33CF2F91AC19E8C00CA33B7 /* datasets.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartJSWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33CF18F1ABC263600CA33B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B33CF1901ABC263600CA33B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B33CF1911ABC263600CA33B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B33CF1911ABC263600CA33B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B33CF1931ABC263600CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B33CF1951ABC263600CA33B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B33CF1981ABC263600CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B33CF1B61ABC270600CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B33CF1BC1ABC9FA100CA33B7 /* CWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWData.h; sourceTree = "<group>"; };
-		B33CF1BD1ABC9FA100CA33B7 /* CWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWData.m; sourceTree = "<group>"; };
-		B33CF1BF1ABCA40B00CA33B7 /* CWLabelledData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLabelledData.h; sourceTree = "<group>"; };
-		B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLabelledData.m; sourceTree = "<group>"; };
-		B33CF1C21ABCA55700CA33B7 /* CWDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDataSet.h; sourceTree = "<group>"; };
-		B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDataSet.m; sourceTree = "<group>"; };
-		B33CF1C51ABCA7A300CA33B7 /* CW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CW.h; sourceTree = "<group>"; };
 		B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B33CF1EC1ABCB59D00CA33B7 /* CWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWObject.h; sourceTree = "<group>"; };
-		B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWObject.m; sourceTree = "<group>"; };
-		B33CF1F01ABDD0B100CA33B7 /* CWPointDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPointDataSet.h; sourceTree = "<group>"; };
-		B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPointDataSet.m; sourceTree = "<group>"; };
-		B33CF1F31ABDE29E00CA33B7 /* CWLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChartData.h; sourceTree = "<group>"; };
-		B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChartData.m; sourceTree = "<group>"; };
-		B33CF1F61ABDEE5700CA33B7 /* CWGlobalOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWGlobalOptions.h; sourceTree = "<group>"; };
-		B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWGlobalOptions.m; sourceTree = "<group>"; };
-		B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChartOptions.h; sourceTree = "<group>"; };
-		B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChartOptions.m; sourceTree = "<group>"; };
-		B33CF1FF1ABDF99500CA33B7 /* CWBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBoolean.h; sourceTree = "<group>"; };
-		B33CF2001ABDF99500CA33B7 /* CWBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBoolean.m; sourceTree = "<group>"; };
-		B33CF2021ABEF9DA00CA33B7 /* CWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWChart.h; sourceTree = "<group>"; };
-		B33CF2031ABEF9DA00CA33B7 /* CWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWChart.m; sourceTree = "<group>"; };
-		B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLineChart.h; sourceTree = "<group>"; };
-		B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLineChart.m; sourceTree = "<group>"; };
-		B33CF2091ABF16D700CA33B7 /* CWRadarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChartData.h; sourceTree = "<group>"; };
-		B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChartData.m; sourceTree = "<group>"; };
-		B33CF20C1ABF16F300CA33B7 /* CWRadarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChartOptions.h; sourceTree = "<group>"; };
-		B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChartOptions.m; sourceTree = "<group>"; };
-		B33CF20F1ABF170B00CA33B7 /* CWRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRadarChart.h; sourceTree = "<group>"; };
-		B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRadarChart.m; sourceTree = "<group>"; };
-		B33CF2131ABF351C00CA33B7 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
-		B33CF2141ABF351C00CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
-		B33CF2151ABF351C00CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cw.html; sourceTree = "<group>"; };
-		B33CF2161ABF351C00CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = datasets.js; sourceTree = "<group>"; };
-		B33CF21C1ABF35E600CA33B7 /* CWBarDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarDataSet.h; sourceTree = "<group>"; };
-		B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarDataSet.m; sourceTree = "<group>"; };
-		B33CF21F1ABF369000CA33B7 /* CWBarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChartData.h; sourceTree = "<group>"; };
-		B33CF2201ABF369000CA33B7 /* CWBarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChartData.m; sourceTree = "<group>"; };
-		B33CF2221ABF372600CA33B7 /* CWBarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChartOptions.h; sourceTree = "<group>"; };
-		B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChartOptions.m; sourceTree = "<group>"; };
-		B33CF2251ABF388E00CA33B7 /* CWBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBarChart.h; sourceTree = "<group>"; };
-		B33CF2261ABF388E00CA33B7 /* CWBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBarChart.m; sourceTree = "<group>"; };
-		B33CF2281ABF3BF900CA33B7 /* CWSegmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWSegmentData.h; sourceTree = "<group>"; };
-		B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWSegmentData.m; sourceTree = "<group>"; };
-		B33CF22C1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPolarAreaChartOptions.h; sourceTree = "<group>"; };
-		B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChartOptions.m; sourceTree = "<group>"; };
-		B33CF22F1ABF3D4B00CA33B7 /* CWPolarAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPolarAreaChart.h; sourceTree = "<group>"; };
-		B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPolarAreaChart.m; sourceTree = "<group>"; };
-		B33CF2331ABF5D3900CA33B7 /* CWPieChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPieChartOptions.h; sourceTree = "<group>"; };
-		B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChartOptions.m; sourceTree = "<group>"; };
-		B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPieChart.h; sourceTree = "<group>"; };
-		B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPieChart.m; sourceTree = "<group>"; };
-		B33CF2391ABFFE7600CA33B7 /* CWDoughnutChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDoughnutChart.h; sourceTree = "<group>"; };
-		B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDoughnutChart.m; sourceTree = "<group>"; };
-		B33CF23C1AC0876B00CA33B7 /* cw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cw.js; sourceTree = "<group>"; };
-		B33CF2411AC0A95500CA33B7 /* CWColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWColors.h; sourceTree = "<group>"; };
-		B33CF2421AC0A95500CA33B7 /* CWColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWColors.m; sourceTree = "<group>"; };
+		B33CF2481AC1707E00CA33B7 /* ChartJSWrapper-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChartJSWrapper-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33CF24B1AC1707E00CA33B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B33CF24C1AC1707E00CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B33CF24E1AC1707E00CA33B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B33CF24F1AC1707E00CA33B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B33CF2511AC1707E00CA33B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B33CF2521AC1707E00CA33B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B33CF2551AC1707E00CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B33CF2571AC1707E00CA33B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B33CF25A1AC1707E00CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B33CF28C1AC1762000CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		B33CF28F1AC19D3700CA33B7 /* CW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CW.h; path = CW/CW.h; sourceTree = SOURCE_ROOT; };
+		B33CF2901AC19D3700CA33B7 /* CWTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTypes.h; path = CW/CWTypes.h; sourceTree = SOURCE_ROOT; };
+		B33CF2911AC19D8E00CA33B7 /* CWBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWBoolean.h; path = CW/CWBoolean.h; sourceTree = SOURCE_ROOT; };
+		B33CF2921AC19D8E00CA33B7 /* CWBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWBoolean.m; path = CW/CWBoolean.m; sourceTree = SOURCE_ROOT; };
+		B33CF2931AC19D8E00CA33B7 /* CWChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWChart.h; path = CW/CWChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2941AC19D8E00CA33B7 /* CWChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWChart.m; path = CW/CWChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2951AC19D8E00CA33B7 /* CWColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWColors.h; path = CW/CWColors.h; sourceTree = SOURCE_ROOT; };
+		B33CF2961AC19D8E00CA33B7 /* CWColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWColors.m; path = CW/CWColors.m; sourceTree = SOURCE_ROOT; };
+		B33CF2971AC19D8E00CA33B7 /* CWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWData.h; path = CW/CWData.h; sourceTree = SOURCE_ROOT; };
+		B33CF2981AC19D8E00CA33B7 /* CWData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWData.m; path = CW/CWData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2991AC19D8E00CA33B7 /* CWGlobalOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWGlobalOptions.h; path = CW/CWGlobalOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF29A1AC19D8E00CA33B7 /* CWGlobalOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWGlobalOptions.m; path = CW/CWGlobalOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF29B1AC19D8E00CA33B7 /* CWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWObject.h; path = CW/CWObject.h; sourceTree = SOURCE_ROOT; };
+		B33CF29C1AC19D8E00CA33B7 /* CWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWObject.m; path = CW/CWObject.m; sourceTree = SOURCE_ROOT; };
+		B33CF29D1AC19D8E00CA33B7 /* CWSegmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSegmentData.h; path = CW/CWSegmentData.h; sourceTree = SOURCE_ROOT; };
+		B33CF29E1AC19D8E00CA33B7 /* CWSegmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSegmentData.m; path = CW/CWSegmentData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2AD1AC19DBF00CA33B7 /* CWDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWDataSet.h; path = CW/CWDataSet.h; sourceTree = SOURCE_ROOT; };
+		B33CF2AE1AC19DBF00CA33B7 /* CWDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWDataSet.m; path = CW/CWDataSet.m; sourceTree = SOURCE_ROOT; };
+		B33CF2AF1AC19DBF00CA33B7 /* CWLabelledData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLabelledData.h; path = CW/CWLabelledData.h; sourceTree = SOURCE_ROOT; };
+		B33CF2B01AC19DBF00CA33B7 /* CWLabelledData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWLabelledData.m; path = CW/CWLabelledData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2B11AC19DBF00CA33B7 /* CWPointDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWPointDataSet.h; path = CW/CWPointDataSet.h; sourceTree = SOURCE_ROOT; };
+		B33CF2B21AC19DBF00CA33B7 /* CWPointDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWPointDataSet.m; path = CW/CWPointDataSet.m; sourceTree = SOURCE_ROOT; };
+		B33CF2B91AC19DE500CA33B7 /* CWLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLineChart.h; path = CW/CWLineChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2BA1AC19DE500CA33B7 /* CWLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWLineChart.m; path = CW/CWLineChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2BB1AC19DE500CA33B7 /* CWLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLineChartData.h; path = CW/CWLineChartData.h; sourceTree = SOURCE_ROOT; };
+		B33CF2BC1AC19DE500CA33B7 /* CWLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWLineChartData.m; path = CW/CWLineChartData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2BD1AC19DE500CA33B7 /* CWLineChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWLineChartOptions.h; path = CW/CWLineChartOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF2BE1AC19DE500CA33B7 /* CWLineChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWLineChartOptions.m; path = CW/CWLineChartOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF2C51AC19E0100CA33B7 /* CWRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWRadarChart.h; path = CW/CWRadarChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2C61AC19E0100CA33B7 /* CWRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWRadarChart.m; path = CW/CWRadarChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2C71AC19E0100CA33B7 /* CWRadarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWRadarChartData.h; path = CW/CWRadarChartData.h; sourceTree = SOURCE_ROOT; };
+		B33CF2C81AC19E0100CA33B7 /* CWRadarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWRadarChartData.m; path = CW/CWRadarChartData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2C91AC19E0100CA33B7 /* CWRadarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWRadarChartOptions.h; path = CW/CWRadarChartOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF2CA1AC19E0100CA33B7 /* CWRadarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWRadarChartOptions.m; path = CW/CWRadarChartOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF2D11AC19E1B00CA33B7 /* CWBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWBarChart.h; path = CW/CWBarChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2D21AC19E1B00CA33B7 /* CWBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWBarChart.m; path = CW/CWBarChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2D31AC19E1B00CA33B7 /* CWBarChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWBarChartData.h; path = CW/CWBarChartData.h; sourceTree = SOURCE_ROOT; };
+		B33CF2D41AC19E1B00CA33B7 /* CWBarChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWBarChartData.m; path = CW/CWBarChartData.m; sourceTree = SOURCE_ROOT; };
+		B33CF2D51AC19E1B00CA33B7 /* CWBarChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWBarChartOptions.h; path = CW/CWBarChartOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF2D61AC19E1B00CA33B7 /* CWBarChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWBarChartOptions.m; path = CW/CWBarChartOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF2D71AC19E1B00CA33B7 /* CWBarDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWBarDataSet.h; path = CW/CWBarDataSet.h; sourceTree = SOURCE_ROOT; };
+		B33CF2D81AC19E1B00CA33B7 /* CWBarDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWBarDataSet.m; path = CW/CWBarDataSet.m; sourceTree = SOURCE_ROOT; };
+		B33CF2E11AC19E3B00CA33B7 /* CWPolarAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWPolarAreaChart.h; path = CW/CWPolarAreaChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2E21AC19E3B00CA33B7 /* CWPolarAreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWPolarAreaChart.m; path = CW/CWPolarAreaChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2E31AC19E3B00CA33B7 /* CWPolarAreaChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWPolarAreaChartOptions.h; path = CW/CWPolarAreaChartOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF2E41AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWPolarAreaChartOptions.m; path = CW/CWPolarAreaChartOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF2E91AC19E6200CA33B7 /* CWDoughnutChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWDoughnutChart.h; path = CW/CWDoughnutChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2EA1AC19E6200CA33B7 /* CWDoughnutChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWDoughnutChart.m; path = CW/CWDoughnutChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2EB1AC19E6200CA33B7 /* CWPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWPieChart.h; path = CW/CWPieChart.h; sourceTree = SOURCE_ROOT; };
+		B33CF2EC1AC19E6200CA33B7 /* CWPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWPieChart.m; path = CW/CWPieChart.m; sourceTree = SOURCE_ROOT; };
+		B33CF2ED1AC19E6200CA33B7 /* CWPieChartOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWPieChartOptions.h; path = CW/CWPieChartOptions.h; sourceTree = SOURCE_ROOT; };
+		B33CF2EE1AC19E6200CA33B7 /* CWPieChartOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWPieChartOptions.m; path = CW/CWPieChartOptions.m; sourceTree = SOURCE_ROOT; };
+		B33CF2F51AC19E8C00CA33B7 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Chart.js; path = CW/Assets/Chart.js; sourceTree = SOURCE_ROOT; };
+		B33CF2F61AC19E8C00CA33B7 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Chart.min.js; path = CW/Assets/Chart.min.js; sourceTree = SOURCE_ROOT; };
+		B33CF2F71AC19E8C00CA33B7 /* cw.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = cw.html; path = CW/Assets/cw.html; sourceTree = SOURCE_ROOT; };
+		B33CF2F81AC19E8C00CA33B7 /* cw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = cw.js; path = CW/Assets/cw.js; sourceTree = SOURCE_ROOT; };
+		B33CF2F91AC19E8C00CA33B7 /* datasets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = datasets.js; path = CW/Assets/datasets.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,14 +172,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B33CF2451AC1707E00CA33B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF28D1AC1762000CA33B7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B33CF1821ABC263600CA33B7 = {
 			isa = PBXGroup;
 			children = (
-				B33CF18D1ABC263600CA33B7 /* ChartJSWrapper */,
-				B33CF1B81ABC271200CA33B7 /* Frameworks */,
+				B33CF1BB1ABC9F3A00CA33B7 /* CW */,
+				B33CF2121ABF351C00CA33B7 /* Assets */,
+				B33CF18D1ABC263600CA33B7 /* ChartJSWrapper-OSX */,
+				B33CF2491AC1707E00CA33B7 /* ChartJSWrapper-IOS */,
 				B33CF18C1ABC263600CA33B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,21 +198,22 @@
 			isa = PBXGroup;
 			children = (
 				B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */,
+				B33CF2481AC1707E00CA33B7 /* ChartJSWrapper-IOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B33CF18D1ABC263600CA33B7 /* ChartJSWrapper */ = {
+		B33CF18D1ABC263600CA33B7 /* ChartJSWrapper-OSX */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF1BB1ABC9F3A00CA33B7 /* CW */,
-				B33CF2121ABF351C00CA33B7 /* Assets */,
 				B33CF1901ABC263600CA33B7 /* AppDelegate.h */,
 				B33CF1911ABC263600CA33B7 /* AppDelegate.m */,
 				B33CF1951ABC263600CA33B7 /* Images.xcassets */,
 				B33CF1971ABC263600CA33B7 /* MainMenu.xib */,
 				B33CF18E1ABC263600CA33B7 /* Supporting Files */,
+				B33CF1B81ABC271200CA33B7 /* Frameworks */,
 			);
+			name = "ChartJSWrapper-OSX";
 			path = ChartJSWrapper;
 			sourceTree = "<group>";
 		};
@@ -173,12 +233,14 @@
 				B33CF1B61ABC270600CA33B7 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B33CF1BB1ABC9F3A00CA33B7 /* CW */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF1C51ABCA7A300CA33B7 /* CW.h */,
+				B33CF28F1AC19D3700CA33B7 /* CW.h */,
+				B33CF2901AC19D3700CA33B7 /* CWTypes.h */,
 				B33CF1F91ABDF61F00CA33B7 /* Core */,
 				B33CF1FA1ABDF63D00CA33B7 /* DataSets */,
 				B33CF1FB1ABDF68B00CA33B7 /* LineChart */,
@@ -188,25 +250,26 @@
 				B33CF2321ABF5CE000CA33B7 /* PieAndDoughnutChart */,
 			);
 			name = CW;
+			path = ChartJSWrapper;
 			sourceTree = "<group>";
 		};
 		B33CF1F91ABDF61F00CA33B7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF2411AC0A95500CA33B7 /* CWColors.h */,
-				B33CF2421AC0A95500CA33B7 /* CWColors.m */,
-				B33CF1EC1ABCB59D00CA33B7 /* CWObject.h */,
-				B33CF1ED1ABCB59D00CA33B7 /* CWObject.m */,
-				B33CF1BC1ABC9FA100CA33B7 /* CWData.h */,
-				B33CF1BD1ABC9FA100CA33B7 /* CWData.m */,
-				B33CF1F61ABDEE5700CA33B7 /* CWGlobalOptions.h */,
-				B33CF1F71ABDEE5700CA33B7 /* CWGlobalOptions.m */,
-				B33CF1FF1ABDF99500CA33B7 /* CWBoolean.h */,
-				B33CF2001ABDF99500CA33B7 /* CWBoolean.m */,
-				B33CF2021ABEF9DA00CA33B7 /* CWChart.h */,
-				B33CF2031ABEF9DA00CA33B7 /* CWChart.m */,
-				B33CF2281ABF3BF900CA33B7 /* CWSegmentData.h */,
-				B33CF2291ABF3BF900CA33B7 /* CWSegmentData.m */,
+				B33CF2911AC19D8E00CA33B7 /* CWBoolean.h */,
+				B33CF2921AC19D8E00CA33B7 /* CWBoolean.m */,
+				B33CF2931AC19D8E00CA33B7 /* CWChart.h */,
+				B33CF2941AC19D8E00CA33B7 /* CWChart.m */,
+				B33CF2951AC19D8E00CA33B7 /* CWColors.h */,
+				B33CF2961AC19D8E00CA33B7 /* CWColors.m */,
+				B33CF2971AC19D8E00CA33B7 /* CWData.h */,
+				B33CF2981AC19D8E00CA33B7 /* CWData.m */,
+				B33CF2991AC19D8E00CA33B7 /* CWGlobalOptions.h */,
+				B33CF29A1AC19D8E00CA33B7 /* CWGlobalOptions.m */,
+				B33CF29B1AC19D8E00CA33B7 /* CWObject.h */,
+				B33CF29C1AC19D8E00CA33B7 /* CWObject.m */,
+				B33CF29D1AC19D8E00CA33B7 /* CWSegmentData.h */,
+				B33CF29E1AC19D8E00CA33B7 /* CWSegmentData.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -214,12 +277,12 @@
 		B33CF1FA1ABDF63D00CA33B7 /* DataSets */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF1BF1ABCA40B00CA33B7 /* CWLabelledData.h */,
-				B33CF1C01ABCA40B00CA33B7 /* CWLabelledData.m */,
-				B33CF1C21ABCA55700CA33B7 /* CWDataSet.h */,
-				B33CF1C31ABCA55700CA33B7 /* CWDataSet.m */,
-				B33CF1F01ABDD0B100CA33B7 /* CWPointDataSet.h */,
-				B33CF1F11ABDD0B100CA33B7 /* CWPointDataSet.m */,
+				B33CF2AD1AC19DBF00CA33B7 /* CWDataSet.h */,
+				B33CF2AE1AC19DBF00CA33B7 /* CWDataSet.m */,
+				B33CF2AF1AC19DBF00CA33B7 /* CWLabelledData.h */,
+				B33CF2B01AC19DBF00CA33B7 /* CWLabelledData.m */,
+				B33CF2B11AC19DBF00CA33B7 /* CWPointDataSet.h */,
+				B33CF2B21AC19DBF00CA33B7 /* CWPointDataSet.m */,
 			);
 			name = DataSets;
 			sourceTree = "<group>";
@@ -227,12 +290,12 @@
 		B33CF1FB1ABDF68B00CA33B7 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF1F31ABDE29E00CA33B7 /* CWLineChartData.h */,
-				B33CF1F41ABDE29E00CA33B7 /* CWLineChartData.m */,
-				B33CF1FC1ABDF6F400CA33B7 /* CWLineChartOptions.h */,
-				B33CF1FD1ABDF6F400CA33B7 /* CWLineChartOptions.m */,
-				B33CF2051ABEFAF300CA33B7 /* CWLineChart.h */,
-				B33CF2061ABEFAF300CA33B7 /* CWLineChart.m */,
+				B33CF2B91AC19DE500CA33B7 /* CWLineChart.h */,
+				B33CF2BA1AC19DE500CA33B7 /* CWLineChart.m */,
+				B33CF2BB1AC19DE500CA33B7 /* CWLineChartData.h */,
+				B33CF2BC1AC19DE500CA33B7 /* CWLineChartData.m */,
+				B33CF2BD1AC19DE500CA33B7 /* CWLineChartOptions.h */,
+				B33CF2BE1AC19DE500CA33B7 /* CWLineChartOptions.m */,
 			);
 			name = LineChart;
 			sourceTree = "<group>";
@@ -240,12 +303,12 @@
 		B33CF2081ABF168700CA33B7 /* RadarChart */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF2091ABF16D700CA33B7 /* CWRadarChartData.h */,
-				B33CF20A1ABF16D700CA33B7 /* CWRadarChartData.m */,
-				B33CF20C1ABF16F300CA33B7 /* CWRadarChartOptions.h */,
-				B33CF20D1ABF16F300CA33B7 /* CWRadarChartOptions.m */,
-				B33CF20F1ABF170B00CA33B7 /* CWRadarChart.h */,
-				B33CF2101ABF170B00CA33B7 /* CWRadarChart.m */,
+				B33CF2C51AC19E0100CA33B7 /* CWRadarChart.h */,
+				B33CF2C61AC19E0100CA33B7 /* CWRadarChart.m */,
+				B33CF2C71AC19E0100CA33B7 /* CWRadarChartData.h */,
+				B33CF2C81AC19E0100CA33B7 /* CWRadarChartData.m */,
+				B33CF2C91AC19E0100CA33B7 /* CWRadarChartOptions.h */,
+				B33CF2CA1AC19E0100CA33B7 /* CWRadarChartOptions.m */,
 			);
 			name = RadarChart;
 			sourceTree = "<group>";
@@ -253,26 +316,27 @@
 		B33CF2121ABF351C00CA33B7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF23C1AC0876B00CA33B7 /* cw.js */,
-				B33CF2131ABF351C00CA33B7 /* Chart.js */,
-				B33CF2141ABF351C00CA33B7 /* Chart.min.js */,
-				B33CF2151ABF351C00CA33B7 /* cw.html */,
-				B33CF2161ABF351C00CA33B7 /* datasets.js */,
+				B33CF2F51AC19E8C00CA33B7 /* Chart.js */,
+				B33CF2F61AC19E8C00CA33B7 /* Chart.min.js */,
+				B33CF2F71AC19E8C00CA33B7 /* cw.html */,
+				B33CF2F81AC19E8C00CA33B7 /* cw.js */,
+				B33CF2F91AC19E8C00CA33B7 /* datasets.js */,
 			);
-			path = Assets;
+			name = Assets;
+			path = ChartJSWrapper/Assets;
 			sourceTree = "<group>";
 		};
 		B33CF21B1ABF35B600CA33B7 /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF21C1ABF35E600CA33B7 /* CWBarDataSet.h */,
-				B33CF21D1ABF35E600CA33B7 /* CWBarDataSet.m */,
-				B33CF21F1ABF369000CA33B7 /* CWBarChartData.h */,
-				B33CF2201ABF369000CA33B7 /* CWBarChartData.m */,
-				B33CF2221ABF372600CA33B7 /* CWBarChartOptions.h */,
-				B33CF2231ABF372600CA33B7 /* CWBarChartOptions.m */,
-				B33CF2251ABF388E00CA33B7 /* CWBarChart.h */,
-				B33CF2261ABF388E00CA33B7 /* CWBarChart.m */,
+				B33CF2D11AC19E1B00CA33B7 /* CWBarChart.h */,
+				B33CF2D21AC19E1B00CA33B7 /* CWBarChart.m */,
+				B33CF2D31AC19E1B00CA33B7 /* CWBarChartData.h */,
+				B33CF2D41AC19E1B00CA33B7 /* CWBarChartData.m */,
+				B33CF2D51AC19E1B00CA33B7 /* CWBarChartOptions.h */,
+				B33CF2D61AC19E1B00CA33B7 /* CWBarChartOptions.m */,
+				B33CF2D71AC19E1B00CA33B7 /* CWBarDataSet.h */,
+				B33CF2D81AC19E1B00CA33B7 /* CWBarDataSet.m */,
 			);
 			name = BarChart;
 			sourceTree = "<group>";
@@ -280,10 +344,10 @@
 		B33CF22B1ABF3CF200CA33B7 /* PolarAreaChart */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF22C1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.h */,
-				B33CF22D1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m */,
-				B33CF22F1ABF3D4B00CA33B7 /* CWPolarAreaChart.h */,
-				B33CF2301ABF3D4B00CA33B7 /* CWPolarAreaChart.m */,
+				B33CF2E11AC19E3B00CA33B7 /* CWPolarAreaChart.h */,
+				B33CF2E21AC19E3B00CA33B7 /* CWPolarAreaChart.m */,
+				B33CF2E31AC19E3B00CA33B7 /* CWPolarAreaChartOptions.h */,
+				B33CF2E41AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m */,
 			);
 			name = PolarAreaChart;
 			sourceTree = "<group>";
@@ -291,14 +355,47 @@
 		B33CF2321ABF5CE000CA33B7 /* PieAndDoughnutChart */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF2331ABF5D3900CA33B7 /* CWPieChartOptions.h */,
-				B33CF2341ABF5D3900CA33B7 /* CWPieChartOptions.m */,
-				B33CF2361ABF5DD400CA33B7 /* CWPieChart.h */,
-				B33CF2371ABF5DD400CA33B7 /* CWPieChart.m */,
-				B33CF2391ABFFE7600CA33B7 /* CWDoughnutChart.h */,
-				B33CF23A1ABFFE7600CA33B7 /* CWDoughnutChart.m */,
+				B33CF2E91AC19E6200CA33B7 /* CWDoughnutChart.h */,
+				B33CF2EA1AC19E6200CA33B7 /* CWDoughnutChart.m */,
+				B33CF2EB1AC19E6200CA33B7 /* CWPieChart.h */,
+				B33CF2EC1AC19E6200CA33B7 /* CWPieChart.m */,
+				B33CF2ED1AC19E6200CA33B7 /* CWPieChartOptions.h */,
+				B33CF2EE1AC19E6200CA33B7 /* CWPieChartOptions.m */,
 			);
 			name = PieAndDoughnutChart;
+			sourceTree = "<group>";
+		};
+		B33CF2491AC1707E00CA33B7 /* ChartJSWrapper-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF28E1AC177BC00CA33B7 /* Frameworks */,
+				B33CF24E1AC1707E00CA33B7 /* AppDelegate.h */,
+				B33CF24F1AC1707E00CA33B7 /* AppDelegate.m */,
+				B33CF2511AC1707E00CA33B7 /* ViewController.h */,
+				B33CF2521AC1707E00CA33B7 /* ViewController.m */,
+				B33CF2541AC1707E00CA33B7 /* Main.storyboard */,
+				B33CF2571AC1707E00CA33B7 /* Images.xcassets */,
+				B33CF2591AC1707E00CA33B7 /* LaunchScreen.xib */,
+				B33CF24A1AC1707E00CA33B7 /* Supporting Files */,
+			);
+			path = "ChartJSWrapper-IOS";
+			sourceTree = "<group>";
+		};
+		B33CF24A1AC1707E00CA33B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF24B1AC1707E00CA33B7 /* Info.plist */,
+				B33CF24C1AC1707E00CA33B7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B33CF28E1AC177BC00CA33B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33CF28C1AC1762000CA33B7 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +418,23 @@
 			productReference = B33CF18B1ABC263600CA33B7 /* ChartJSWrapper.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B33CF2471AC1707E00CA33B7 /* ChartJSWrapper-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33CF26C1AC1707E00CA33B7 /* Build configuration list for PBXNativeTarget "ChartJSWrapper-IOS" */;
+			buildPhases = (
+				B33CF2441AC1707E00CA33B7 /* Sources */,
+				B33CF2451AC1707E00CA33B7 /* Frameworks */,
+				B33CF2461AC1707E00CA33B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChartJSWrapper-IOS";
+			productName = "ChartJSWrapper-IOS";
+			productReference = B33CF2481AC1707E00CA33B7 /* ChartJSWrapper-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,6 +445,9 @@
 				ORGANIZATIONNAME = "Gyetván András";
 				TargetAttributes = {
 					B33CF18A1ABC263600CA33B7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B33CF2471AC1707E00CA33B7 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -349,6 +466,7 @@
 			projectRoot = "";
 			targets = (
 				B33CF18A1ABC263600CA33B7 /* ChartJSWrapper */,
+				B33CF2471AC1707E00CA33B7 /* ChartJSWrapper-IOS */,
 			);
 		};
 /* End PBXProject section */
@@ -358,13 +476,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B33CF2171ABF351C00CA33B7 /* Chart.js in Resources */,
-				B33CF21A1ABF351C00CA33B7 /* datasets.js in Resources */,
+				B33CF3001AC19E8C00CA33B7 /* cw.js in Resources */,
+				B33CF2FA1AC19E8C00CA33B7 /* Chart.js in Resources */,
 				B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */,
 				B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */,
-				B33CF2191ABF351C00CA33B7 /* cw.html in Resources */,
-				B33CF2181ABF351C00CA33B7 /* Chart.min.js in Resources */,
-				B33CF23D1AC0876B00CA33B7 /* cw.js in Resources */,
+				B33CF2FE1AC19E8C00CA33B7 /* cw.html in Resources */,
+				B33CF3021AC19E8C00CA33B7 /* datasets.js in Resources */,
+				B33CF2FC1AC19E8C00CA33B7 /* Chart.min.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33CF2461AC1707E00CA33B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF2FF1AC19E8C00CA33B7 /* cw.html in Resources */,
+				B33CF2561AC1707E00CA33B7 /* Main.storyboard in Resources */,
+				B33CF2FB1AC19E8C00CA33B7 /* Chart.js in Resources */,
+				B33CF2FD1AC19E8C00CA33B7 /* Chart.min.js in Resources */,
+				B33CF25B1AC1707E00CA33B7 /* LaunchScreen.xib in Resources */,
+				B33CF2581AC1707E00CA33B7 /* Images.xcassets in Resources */,
+				B33CF3011AC19E8C00CA33B7 /* cw.js in Resources */,
+				B33CF3031AC19E8C00CA33B7 /* datasets.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,33 +508,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B33CF2381ABF5DD400CA33B7 /* CWPieChart.m in Sources */,
-				B33CF2071ABEFAF300CA33B7 /* CWLineChart.m in Sources */,
-				B33CF2311ABF3D4B00CA33B7 /* CWPolarAreaChart.m in Sources */,
-				B33CF1C11ABCA40B00CA33B7 /* CWLabelledData.m in Sources */,
-				B33CF1F21ABDD0B100CA33B7 /* CWPointDataSet.m in Sources */,
-				B33CF22A1ABF3BF900CA33B7 /* CWSegmentData.m in Sources */,
-				B33CF1F81ABDEE5700CA33B7 /* CWGlobalOptions.m in Sources */,
-				B33CF2211ABF369000CA33B7 /* CWBarChartData.m in Sources */,
-				B33CF1BE1ABC9FA100CA33B7 /* CWData.m in Sources */,
-				B33CF2351ABF5D3900CA33B7 /* CWPieChartOptions.m in Sources */,
-				B33CF20E1ABF16F300CA33B7 /* CWRadarChartOptions.m in Sources */,
-				B33CF20B1ABF16D700CA33B7 /* CWRadarChartData.m in Sources */,
-				B33CF1F51ABDE29E00CA33B7 /* CWLineChartData.m in Sources */,
-				B33CF2011ABDF99500CA33B7 /* CWBoolean.m in Sources */,
-				B33CF1FE1ABDF6F400CA33B7 /* CWLineChartOptions.m in Sources */,
-				B33CF1EE1ABCB59D00CA33B7 /* CWObject.m in Sources */,
-				B33CF2041ABEF9DA00CA33B7 /* CWChart.m in Sources */,
-				B33CF2241ABF372600CA33B7 /* CWBarChartOptions.m in Sources */,
-				B33CF22E1ABF3D2E00CA33B7 /* CWPolarAreaChartOptions.m in Sources */,
+				B33CF2E51AC19E3B00CA33B7 /* CWPolarAreaChart.m in Sources */,
+				B33CF2B31AC19DBF00CA33B7 /* CWDataSet.m in Sources */,
+				B33CF2B71AC19DBF00CA33B7 /* CWPointDataSet.m in Sources */,
+				B33CF2C11AC19DE500CA33B7 /* CWLineChartData.m in Sources */,
+				B33CF2A71AC19D8E00CA33B7 /* CWGlobalOptions.m in Sources */,
+				B33CF2F11AC19E6200CA33B7 /* CWPieChart.m in Sources */,
+				B33CF2EF1AC19E6200CA33B7 /* CWDoughnutChart.m in Sources */,
+				B33CF2A91AC19D8E00CA33B7 /* CWObject.m in Sources */,
+				B33CF2A51AC19D8E00CA33B7 /* CWData.m in Sources */,
+				B33CF2B51AC19DBF00CA33B7 /* CWLabelledData.m in Sources */,
+				B33CF2DF1AC19E1B00CA33B7 /* CWBarDataSet.m in Sources */,
+				B33CF29F1AC19D8E00CA33B7 /* CWBoolean.m in Sources */,
+				B33CF2CD1AC19E0100CA33B7 /* CWRadarChartData.m in Sources */,
+				B33CF2C31AC19DE500CA33B7 /* CWLineChartOptions.m in Sources */,
+				B33CF2A31AC19D8E00CA33B7 /* CWColors.m in Sources */,
+				B33CF2A11AC19D8E00CA33B7 /* CWChart.m in Sources */,
+				B33CF2CF1AC19E0100CA33B7 /* CWRadarChartOptions.m in Sources */,
+				B33CF2DB1AC19E1B00CA33B7 /* CWBarChartData.m in Sources */,
 				B33CF1941ABC263600CA33B7 /* main.m in Sources */,
-				B33CF23B1ABFFE7600CA33B7 /* CWDoughnutChart.m in Sources */,
+				B33CF2E71AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m in Sources */,
 				B33CF1921ABC263600CA33B7 /* AppDelegate.m in Sources */,
-				B33CF2271ABF388E00CA33B7 /* CWBarChart.m in Sources */,
-				B33CF1C41ABCA55700CA33B7 /* CWDataSet.m in Sources */,
-				B33CF2111ABF170B00CA33B7 /* CWRadarChart.m in Sources */,
-				B33CF2431AC0A95500CA33B7 /* CWColors.m in Sources */,
-				B33CF21E1ABF35E600CA33B7 /* CWBarDataSet.m in Sources */,
+				B33CF2F31AC19E6200CA33B7 /* CWPieChartOptions.m in Sources */,
+				B33CF2BF1AC19DE500CA33B7 /* CWLineChart.m in Sources */,
+				B33CF2D91AC19E1B00CA33B7 /* CWBarChart.m in Sources */,
+				B33CF2AB1AC19D8E00CA33B7 /* CWSegmentData.m in Sources */,
+				B33CF2CB1AC19E0100CA33B7 /* CWRadarChart.m in Sources */,
+				B33CF2DD1AC19E1B00CA33B7 /* CWBarChartOptions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33CF2441AC1707E00CA33B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33CF2E61AC19E3B00CA33B7 /* CWPolarAreaChart.m in Sources */,
+				B33CF2AA1AC19D8E00CA33B7 /* CWObject.m in Sources */,
+				B33CF2F01AC19E6200CA33B7 /* CWDoughnutChart.m in Sources */,
+				B33CF2B81AC19DBF00CA33B7 /* CWPointDataSet.m in Sources */,
+				B33CF2A21AC19D8E00CA33B7 /* CWChart.m in Sources */,
+				B33CF2CC1AC19E0100CA33B7 /* CWRadarChart.m in Sources */,
+				B33CF2A81AC19D8E00CA33B7 /* CWGlobalOptions.m in Sources */,
+				B33CF2F41AC19E6200CA33B7 /* CWPieChartOptions.m in Sources */,
+				B33CF2B61AC19DBF00CA33B7 /* CWLabelledData.m in Sources */,
+				B33CF2E81AC19E3B00CA33B7 /* CWPolarAreaChartOptions.m in Sources */,
+				B33CF2DE1AC19E1B00CA33B7 /* CWBarChartOptions.m in Sources */,
+				B33CF2B41AC19DBF00CA33B7 /* CWDataSet.m in Sources */,
+				B33CF2AC1AC19D8E00CA33B7 /* CWSegmentData.m in Sources */,
+				B33CF2CE1AC19E0100CA33B7 /* CWRadarChartData.m in Sources */,
+				B33CF2A61AC19D8E00CA33B7 /* CWData.m in Sources */,
+				B33CF2D01AC19E0100CA33B7 /* CWRadarChartOptions.m in Sources */,
+				B33CF2A01AC19D8E00CA33B7 /* CWBoolean.m in Sources */,
+				B33CF2C01AC19DE500CA33B7 /* CWLineChart.m in Sources */,
+				B33CF2C41AC19DE500CA33B7 /* CWLineChartOptions.m in Sources */,
+				B33CF2531AC1707E00CA33B7 /* ViewController.m in Sources */,
+				B33CF2C21AC19DE500CA33B7 /* CWLineChartData.m in Sources */,
+				B33CF2501AC1707E00CA33B7 /* AppDelegate.m in Sources */,
+				B33CF2DA1AC19E1B00CA33B7 /* CWBarChart.m in Sources */,
+				B33CF2F21AC19E6200CA33B7 /* CWPieChart.m in Sources */,
+				B33CF2A41AC19D8E00CA33B7 /* CWColors.m in Sources */,
+				B33CF2DC1AC19E1B00CA33B7 /* CWBarChartData.m in Sources */,
+				B33CF2E01AC19E1B00CA33B7 /* CWBarDataSet.m in Sources */,
+				B33CF24D1AC1707E00CA33B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +582,22 @@
 				B33CF1981ABC263600CA33B7 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B33CF2541AC1707E00CA33B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33CF2551AC1707E00CA33B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B33CF2591AC1707E00CA33B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33CF25A1AC1707E00CA33B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -517,6 +701,39 @@
 			};
 			name = Release;
 		};
+		B33CF2681AC1707E00CA33B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChartJSWrapper-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B33CF2691AC1707E00CA33B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ChartJSWrapper-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +751,15 @@
 			buildConfigurations = (
 				B33CF1A91ABC263600CA33B7 /* Debug */,
 				B33CF1AA1ABC263600CA33B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33CF26C1AC1707E00CA33B7 /* Build configuration list for PBXNativeTarget "ChartJSWrapper-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33CF2681AC1707E00CA33B7 /* Debug */,
+				B33CF2691AC1707E00CA33B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
