@@ -9,7 +9,7 @@ An Objective-C wrapper around Chart.js.
 </p>
 
 #Description
-This package can be used in conjunction with WKWebView/WebView to add Chart.js charts to a native iOS/OSX application. 
+This package can be used in conjunction with WKWebView/WebView to add [Chart.js](http://www.chartjs.org) charts to a native iOS/OSX application. 
 
 
 #Usage
