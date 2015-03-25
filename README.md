@@ -47,7 +47,7 @@ On OSX you can add a WebView to your app in IB. You need to add an outlet refere
 }
 ```
 ##Using wrapper classes
-The wrapper supports all the chart types provided by Chart.js by separate class:
+The wrapper supports all the chart types provided by Chart.js by separated classes:
 - Line : ```CWLineChart/CWLineChartData/CWLineChartOptions/CWPointDataSet```
 - Radar : ```CWRadarChart/CWRadarChartData/CWRadarChartOptions/CWPointDataSet```
 - Bar : ```CWBarChart/CWBarChartData/CWBarChartOptions/CWBarDataSet```
