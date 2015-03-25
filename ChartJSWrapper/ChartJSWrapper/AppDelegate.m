@@ -35,12 +35,8 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application
-//	[self.webview mainFrame] loadHTMLString:<#(NSString *)#> baseURL:<#(NSURL *)#>
 	NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
 	NSString *htmlPath = [resourcesPath stringByAppendingString:@"/cw.html"];
-	[self.webview setUIDelegate: self];
-	[self.webview setResourceLoadDelegate: self];
 	[[self.webview mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
 }
 
@@ -50,10 +46,6 @@
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
 	return YES;
-}
-
-- (void)webView:(WebView *)sender didClearWindowObject:(WebScriptObject *)windowObject forFrame:(WebFrame *)frame {
-	
 }
 
 - (NSInteger) random:(NSInteger) max {

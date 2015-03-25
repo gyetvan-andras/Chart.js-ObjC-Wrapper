@@ -11,8 +11,6 @@
 		B33CF1941ABC263600CA33B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF1931ABC263600CA33B7 /* main.m */; };
 		B33CF1961ABC263600CA33B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1951ABC263600CA33B7 /* Images.xcassets */; };
 		B33CF1991ABC263600CA33B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B33CF1971ABC263600CA33B7 /* MainMenu.xib */; };
-		B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1B61ABC270600CA33B7 /* WebKit.framework */; };
-		B33CF1EB1ABCAC1300CA33B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */; };
 		B33CF24D1AC1707E00CA33B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF24C1AC1707E00CA33B7 /* main.m */; };
 		B33CF2501AC1707E00CA33B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF24F1AC1707E00CA33B7 /* AppDelegate.m */; };
 		B33CF2531AC1707E00CA33B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF2521AC1707E00CA33B7 /* ViewController.m */; };
@@ -83,6 +81,7 @@
 		B33CF3131AC1B2C200CA33B7 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = B33CF3121AC1B2C200CA33B7 /* img.png */; };
 		B33CF3151AC1E43B00CA33B7 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B33CF3141AC1E43B00CA33B7 /* settings@2x.png */; };
 		B33CF3191AC1EBE800CA33B7 /* PulldownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B33CF3181AC1EBE800CA33B7 /* PulldownMenu.m */; };
+		B33CF31B1AC2AB1700CA33B7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33CF31A1AC2AB1700CA33B7 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,8 +92,6 @@
 		B33CF1931ABC263600CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B33CF1951ABC263600CA33B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B33CF1981ABC263600CA33B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B33CF1B61ABC270600CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B33CF2481AC1707E00CA33B7 /* ChartJSWrapper-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChartJSWrapper-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33CF24B1AC1707E00CA33B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B33CF24C1AC1707E00CA33B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,6 +164,7 @@
 		B33CF3141AC1E43B00CA33B7 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		B33CF3171AC1EBE800CA33B7 /* PulldownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulldownMenu.h; sourceTree = "<group>"; };
 		B33CF3181AC1EBE800CA33B7 /* PulldownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulldownMenu.m; sourceTree = "<group>"; };
+		B33CF31A1AC2AB1700CA33B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B33CF1EB1ABCAC1300CA33B7 /* SystemConfiguration.framework in Frameworks */,
-				B33CF1B71ABC270600CA33B7 /* WebKit.framework in Frameworks */,
+				B33CF31B1AC2AB1700CA33B7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +233,7 @@
 		B33CF1B81ABC271200CA33B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B33CF1EA1ABCAC1300CA33B7 /* SystemConfiguration.framework */,
-				B33CF1B61ABC270600CA33B7 /* WebKit.framework */,
+				B33CF31A1AC2AB1700CA33B7 /* WebKit.framework */,
 			);
 			name = Frameworks;
 			path = ..;

@@ -1,39 +1,112 @@
 # Chart.js-ObjC-Wrapper
 An Objective-C wrapper around Chart.js. 
 
-#Description
-This package can be used in conjunction with WebView to add Chart.js charts to a native OSX application. 
-MLCalendarView is a date selector component which is represented as a month calendar. This component extracted from the [ModerLook-OSX](https://github.com/gyetvan-andras/ModernLook-OSX) package for easier standalone use.
+<p align="center">
+	<img src="doc/sample.png" alt="Sample">
+	<p align="center">
+		<em>Chart.js wrapper</em>
+	</p>
+</p>
 
-The component uses the system Language & Region settings, so it will display the month and day names regarding to the system settings. Also it lays out the days according to the first day of week system setting.
+#Description
+This package can be used in conjunction with WKWebView/WebView to add Chart.js charts to a native iOS/OSX application. 
+
 
 #Usage
-To use the component in your project you need to copy all the files in the MLCalendar group to your project.
+##Project preparation
+1. add WebKit framework to you app
+2. add all the files in CW folder to your project
+3. include CW.h
+Chart.js wrapper needs a webview to use to execute java script functions and display the chart. You need to prepare the webview to include Char.js script and cw.js which provides java script functions to the wrapper. 
 
-MLCalendarView is derived from NSViewController and can be used as any other view. 
+###iOS
+You need to add a WKWebView to your ui and load the cw.html.
+```objective-c
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	[self createMenu];
+	
+	WKWebView* webview = [[WKWebView alloc] initWithFrame:self.wview.bounds];
+	[webview setTranslatesAutoresizingMaskIntoConstraints:NO];
+	[self.wview addSubview:webview];
+	
+	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(webview);
+	[self.wview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[webview]|" options:0 metrics:nil views:viewsDictionary]];
+	[self.wview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[webview]|" options:0 metrics:nil views:viewsDictionary]];
+	
+	
+	self.webview = webview;
+	NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
+	NSString *htmlPath = [resourcesPath stringByAppendingString:@"/cw.html"];
+	[self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
+}
+```
+###OSX
+On OSX you can add a WebView to your app in IB. You need to add an outlet reference to this WebView and load cw.html
+```objective-c
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
+	NSString *htmlPath = [resourcesPath stringByAppendingString:@"/cw.html"];
+	[[self.webview mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
+}
+```
+##Using wrapper classes
+The wrapper supports all the chart types provided by Chart.js by separate class:
+- Line : CWLineChart/CWLineChartData/CWLineChartOptions/CWPointDataSet
+- Radar : CWRadarChart/CWRadarChartData/CWRadarChartOptions/CWPointDataSet
+- Bar : CWBarChart/CWBarChartData/CWBarChartOptions/CWBarDataSet
+- Polar Area : CWPolarAreaChart/CWSegmentData/CWPolarAreaChartOptions
+- Pie : CWPieChart/CWSegmentData/CWPieChartOptions 
+- Doughnut : CWDoughnutChart/CWSegmentData/CWPieChartOptions 
 
-The component contains the following properties to change the default colors used by the calendar.
+All these classes are representations of Chart.js classes (prototypes). The property and method names are the same as in the Chart.js.
+In the chart options there are two differences:
+1. the colors are represented by NSColor/UIColor instead of CSS color string (rgba(123,43,56,0.8))
+2. in order to create proper JSON from the objects the boolean values are represented by a CWBoolean. You can use cwYES/cwNO.
+
+###Examples
+Add a LineChart
 ```objective-c
-@property (nonatomic, copy) NSColor* backgroundColor;
-@property (nonatomic, copy) NSColor* textColor;
-@property (nonatomic, copy) NSColor* selectionColor;
-@property (nonatomic, copy) NSColor* todayMarkerColor;
-@property (nonatomic, copy) NSColor* dayMarkerColor;
+- (void)addLine {
+	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D"]];
+	NSMutableArray* datasets = [NSMutableArray array];
+	for(NSInteger i = 1; i < 4; i++) {
+		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
+		ds.label = [NSString stringWithFormat:@"Label %ld",i];
+		CWColor* c1 = [[CWColors sharedColors] pickColor];
+		CWColor* c2 = [c1 colorWithAlphaComponent:0.5f];
+		ds.fillColor = c2;
+		ds.strokeColor = c1;
+		[datasets addObject:ds];
+	}
+	
+	CWLineChartData* lcd = [[CWLineChartData alloc] initWithLabels:labels andDataSet:datasets];
+	self.lineChart = [[CWLineChart alloc] initWithWebView:self.webview name:@"LineChart1" width:300 height:200 data:lcd options:nil];
+	[self.lineChart addChart];
+}
 ```
-And the following two properties to set the selected date and the currently displayed month.
+Delete the first point set from the line chart data, then append a new point set to it.
 ```objective-c
-@property (nonatomic, strong) NSDate* date;
-@property (nonatomic, strong) NSDate* selectedDate;
+- (void)delAddLine {
+	[self.lineChart removeData];
+	[self.lineChart addData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])] label:@"W"];
+}
 ```
-Also, there is a delegate for the calendar, which is used to send a message when the selected date changed.
+Change all the points in the line chart.
 ```objective-c
-@protocol MLCalendarViewDelegate <NSObject>
-- (void) didSelectDate:(NSDate*)selectedDate;
-@end
+- (void)changeLine {
+	for(NSInteger i = 1; i < 4; i++) {
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:0];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:1];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:2];
+		[self.lineChart setValue:@([self random:100]) inDataset:i-1 at:3];
+	}
+	[self.lineChart update];
+}
 ```
 
 #Sample Application
-The sample application shows the usage of the component as an NSPopover content.
+The sample application shows the basic usage of the wrapper.
 
 #License
 MIT
