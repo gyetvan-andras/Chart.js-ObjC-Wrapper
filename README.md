@@ -17,6 +17,7 @@ This package can be used in conjunction with WKWebView/WebView to add [Chart.js]
 1. add WebKit framework to you app
 2. add all the files in CW folder to your project
 3. include CW.h
+
 Chart.js wrapper needs a webview to use to execute java script functions and display the chart. You need to prepare the webview to include Char.js script and cw.js which provides java script functions to the wrapper. 
 
 ###iOS
