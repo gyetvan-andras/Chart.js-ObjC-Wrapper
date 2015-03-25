@@ -9,7 +9,7 @@
 #import "CWColors.h"
 
 NSString *const CWCTurquise = @"turquise";
-NSString *const CWCemerald = @"emerald";
+NSString *const CWCEmerald = @"emerald";
 NSString *const CWCPeterRiver = @"peter river";
 NSString *const CWCAmethyst = @"amethyst";
 NSString *const CWCWetAsphalt = @"wet asphalt";

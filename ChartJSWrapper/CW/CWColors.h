@@ -9,7 +9,7 @@
 #import "CWTypes.h"
 
 extern NSString *const CWCTurquise;
-extern NSString *const CWCemerald;
+extern NSString *const CWCEmerald;
 extern NSString *const CWCPeterRiver;
 extern NSString *const CWCAmethyst;
 extern NSString *const CWCWetAsphalt;
