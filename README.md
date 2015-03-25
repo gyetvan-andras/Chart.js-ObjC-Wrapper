@@ -56,7 +56,9 @@ The wrapper supports all the chart types provided by Chart.js by separated class
 - Doughnut : ```CWDoughnutChart/CWSegmentData/CWPieChartOptions```
 
 All these classes are representations of Chart.js classes (prototypes). The property and method names are the same as in the Chart.js.
+
 In the chart options there are two differences:
+
 1. the colors are represented by NSColor/UIColor instead of CSS color string (```rgba(123,43,56,0.8)```)
 2. in order to create proper JSON from the objects the boolean values are represented by a CWBoolean. You can use cwYES/cwNO.
 
