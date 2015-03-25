@@ -104,9 +104,40 @@ Change all the points in the line chart.
 	[self.lineChart update];
 }
 ```
+#CWColors library
+The project contains a small color library to access [Flat UI Colors](http://flatuicolors.com)
+
+You can pick random colors by ```[[CWColors sharedColors] pickColor]``` or access colors by name ```[CWColors sharedColors].colors[CWCAsbestos];``` with the following constants:
+```objective-c
+extern NSString *const CWCTurquise;
+extern NSString *const CWCEmerald;
+extern NSString *const CWCPeterRiver;
+extern NSString *const CWCAmethyst;
+extern NSString *const CWCWetAsphalt;
+extern NSString *const CWCGreenSea;
+extern NSString *const CWCNephritis;
+extern NSString *const CWCBelizeHole;
+extern NSString *const CWCWisteria;
+extern NSString *const CWCMidnightBlue;
+extern NSString *const CWCSunFlower;
+extern NSString *const CWCCarrot;
+extern NSString *const CWCAlizarin;
+extern NSString *const CWCClouds;
+extern NSString *const CWCConcrete;
+extern NSString *const CWCOrange;
+extern NSString *const CWCPumpkin;
+extern NSString *const CWCPomegrante;
+extern NSString *const CWCSilver;
+extern NSString *const CWCAsbestos;
+```
+This small library contains 20 colors only, if you are interested in a comprehensive color library, which contains more than 1200 colors, you should look at [Rainbow](https://github.com/NorthernRealities/Rainbow)
 
 #Sample Application
 The sample application shows the basic usage of the wrapper.
+
+#Acknowledgement
+1. The iOS sample application uses [iOSPullDownMenu](https://github.com/BernardGatt/iOSPullDownMenu)
+2. The color library contains color from [Flat UI Colors](http://flatuicolors.com)
 
 #License
 MIT
