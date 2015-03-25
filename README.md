@@ -52,16 +52,16 @@ On OSX you can add a WebView to your app in IB. You need to add an outlet refere
 ```
 ##Using wrapper classes
 The wrapper supports all the chart types provided by Chart.js by separate class:
-- Line : CWLineChart/CWLineChartData/CWLineChartOptions/CWPointDataSet
-- Radar : CWRadarChart/CWRadarChartData/CWRadarChartOptions/CWPointDataSet
-- Bar : CWBarChart/CWBarChartData/CWBarChartOptions/CWBarDataSet
-- Polar Area : CWPolarAreaChart/CWSegmentData/CWPolarAreaChartOptions
-- Pie : CWPieChart/CWSegmentData/CWPieChartOptions 
-- Doughnut : CWDoughnutChart/CWSegmentData/CWPieChartOptions 
+- Line : ```CWLineChart/CWLineChartData/CWLineChartOptions/CWPointDataSet```
+- Radar : ```CWRadarChart/CWRadarChartData/CWRadarChartOptions/CWPointDataSet```
+- Bar : ```CWBarChart/CWBarChartData/CWBarChartOptions/CWBarDataSet```
+- Polar Area : ```CWPolarAreaChart/CWSegmentData/CWPolarAreaChartOptions```
+- Pie : ```CWPieChart/CWSegmentData/CWPieChartOptions``` 
+- Doughnut : ```CWDoughnutChart/CWSegmentData/CWPieChartOptions```
 
 All these classes are representations of Chart.js classes (prototypes). The property and method names are the same as in the Chart.js.
 In the chart options there are two differences:
-1. the colors are represented by NSColor/UIColor instead of CSS color string (rgba(123,43,56,0.8))
+1. the colors are represented by NSColor/UIColor instead of CSS color string (```rgba(123,43,56,0.8)```)
 2. in order to create proper JSON from the objects the boolean values are represented by a CWBoolean. You can use cwYES/cwNO.
 
 ###Examples
@@ -130,7 +130,7 @@ extern NSString *const CWCPomegrante;
 extern NSString *const CWCSilver;
 extern NSString *const CWCAsbestos;
 ```
-This small library contains 20 colors only, if you are interested in a comprehensive color library, which contains more than 1200 colors, you should look at [Rainbow](https://github.com/NorthernRealities/Rainbow)
+This small library contains 20 colors only, if you are interested in a more comprehensive color library, which contains more than 1200 colors, you should look at [Rainbow](https://github.com/NorthernRealities/Rainbow)
 
 #Sample Application
 The sample application shows the basic usage of the wrapper.
