@@ -27,14 +27,9 @@ You need to add a WKWebView to your ui and load the cw.html.
 	[self createMenu];
 	
 	WKWebView* webview = [[WKWebView alloc] initWithFrame:self.wview.bounds];
-	[webview setTranslatesAutoresizingMaskIntoConstraints:NO];
-	[self.wview addSubview:webview];
-	
-	NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(webview);
-	[self.wview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[webview]|" options:0 metrics:nil views:viewsDictionary]];
-	[self.wview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[webview]|" options:0 metrics:nil views:viewsDictionary]];
-	
-	
+
+//  ... add code here to insert webview to UI - for an example see the sample app	
+
 	self.webview = webview;
 	NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
 	NSString *htmlPath = [resourcesPath stringByAppendingString:@"/cw.html"];
