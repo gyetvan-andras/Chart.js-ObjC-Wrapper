@@ -66,7 +66,7 @@ In the chart options there are two differences:
 Add a LineChart
 ```objective-c
 - (void)addLine {
-	NSArray* labels = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D"]];
+	NSArray* labels = @[@"A",@"B",@"C",@"D"];
 	NSMutableArray* datasets = [NSMutableArray array];
 	for(NSInteger i = 1; i < 4; i++) {
 		CWPointDataSet* ds = [[CWPointDataSet alloc] initWithData:@[@([self random:100]),@([self random:100]),@([self random:100]),@([self random:100])]];
