@@ -8,19 +8,19 @@ An Objective-C wrapper around Chart.js.
 	</p>
 </p>
 
-#Description
+# Description
 This package can be used in conjunction with WKWebView/WebView to add [Chart.js](http://www.chartjs.org) charts to a native iOS/OSX application. 
 
 
-#Usage
-##Project preparation
+# Usage
+## Project preparation
 1. add WebKit framework to you app
 2. add all the files in CW folder to your project
 3. include CW.h
 
 Chart.js wrapper needs a webview to use to execute java script functions and display the chart. You need to prepare the webview to include Char.js script and cw.js which provides java script functions to the wrapper. 
 
-###iOS
+### iOS
 You need to add a WKWebView to your ui and load the cw.html.
 ```objective-c
 - (void)viewDidLoad {
@@ -37,7 +37,7 @@ You need to add a WKWebView to your ui and load the cw.html.
 	[self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
 }
 ```
-###OSX
+### OSX
 On OSX you can add a WebView to your app in IB. You need to add an outlet reference to this WebView and load cw.html
 ```objective-c
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -46,7 +46,7 @@ On OSX you can add a WebView to your app in IB. You need to add an outlet refere
 	[[self.webview mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
 }
 ```
-##Using wrapper classes
+## Using wrapper classes
 The wrapper supports all the chart types provided by Chart.js by separated classes:
 - Line : ```CWLineChart/CWLineChartData/CWLineChartOptions/CWPointDataSet```
 - Radar : ```CWRadarChart/CWRadarChartData/CWRadarChartOptions/CWPointDataSet```
@@ -62,7 +62,7 @@ In the chart options there are two differences:
 1. the colors are represented by NSColor/UIColor instead of CSS color string (```rgba(123,43,56,0.8)```)
 2. in order to create proper JSON from the objects the boolean values are represented by a CWBoolean. You can use cwYES/cwNO.
 
-###Examples
+### Examples
 Add a LineChart
 ```objective-c
 - (void)addLine {
@@ -102,7 +102,7 @@ Change all the points in the line chart.
 	[self.lineChart update];
 }
 ```
-#CWColors library
+# CWColors library
 The project contains a small color library to access [Flat UI Colors](http://flatuicolors.com)
 
 You can pick random colors by ```[[CWColors sharedColors] pickColor]``` or access colors by name ```[CWColors sharedColors].colors[CWCAsbestos];``` with the following constants:
@@ -130,13 +130,13 @@ extern NSString *const CWCAsbestos;
 ```
 This small library contains 20 colors only, if you are interested in a more comprehensive color library, which contains more than 1200 colors, you should look at [Rainbow](https://github.com/NorthernRealities/Rainbow)
 
-#Sample Application
+# Sample Application
 The sample application shows the basic usage of the wrapper.
 
-#Acknowledgement
+# Acknowledgement
 1. The iOS sample application uses [iOSPullDownMenu](https://github.com/BernardGatt/iOSPullDownMenu)
 2. The color library contains color from [Flat UI Colors](http://flatuicolors.com)
 
-#License
+# License
 MIT
 
